@@ -1,0 +1,37 @@
+#outsideblock{
+  background-image: url('./tour.jpg');
+  width: 1080px;
+}
+
+#middle_1{
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 200px;
+  color: white;
+}
+
+#middle_2{
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 400px;
+  color: white;
+}
+
+#middle_3{
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 600;
+  color: white;
+}
+
+#middle_4{
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 800;
+  color: white;
+}
+
