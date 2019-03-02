@@ -1,7 +1,8 @@
 body{
   background-image:url('./tour.png');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-position: center;
+  background-size: cover;
 }
 
 
