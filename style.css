@@ -1,8 +1,9 @@
-
-#outsideblock{
+body{
   background-image:url('./tour.jpg');
-  width: 1920px;
-  height: 1080px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 }
 
 #middle_1{
