@@ -1,12 +1,7 @@
-body{
+
+#outsideblock{
   background-image:url('./tour.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-
-#outsideblock{ 
+  width: 100%;
 }
 
 #middle_1{
