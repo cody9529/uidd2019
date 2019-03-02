@@ -1,10 +1,13 @@
-body{
-  background-image:url('./tour.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-}
+<style>
+  body{
+    background-image:url('./tour.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+  }
+</style>
+
 
 #middle_1{
   font-size: 20px;
