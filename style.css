@@ -1,6 +1,10 @@
-#outsideblock{
-  background-image: url('./tour.jpg');
-  width: 1080px;
+body{
+  background-image:url('tour.jpg');
+  background-repeat: no-repeat;
+}
+
+
+#outsideblock{ 
 }
 
 #middle_1{
