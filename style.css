@@ -1,8 +1,8 @@
 
 #outsideblock{
   background-image:url('./tour.jpg');
-  width: 100%;
-  height: 100%;
+  width: 1920px;
+  height: 1080px;
 }
 
 #middle_1{
@@ -25,7 +25,7 @@
   font-size: 20px;
   position: absolute;
   top: 50%;
-  left: 600;
+  left: 600px;
   color: white;
 }
 
@@ -33,7 +33,7 @@
   font-size: 20px;
   position: absolute;
   top: 50%;
-  left: 800;
+  left: 800px;
   color: white;
 }
 
