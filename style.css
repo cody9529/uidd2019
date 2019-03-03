@@ -83,7 +83,7 @@ body{
 #barin{
   background-color: #AD0000;
   width: 200px;
-  height: 5px;
+  height: 100%;
   z-index: 1;
   left: 30px;
 }
