@@ -72,11 +72,11 @@ body{
 
 #paris{
   background-image: url('./paris.jpg');
-  width: 180px;
-  height: 370px;
+  width: 200px;
+  height: 288px;
   position: absolute;
   left: 320px;
-  top: 33%;
+  top: 30%;
   z-index: -1;
 }
 
