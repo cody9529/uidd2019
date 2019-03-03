@@ -12,6 +12,11 @@ body{
   width: 1440px;
   height: 810px;
   position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
 }
 
 #title{
@@ -26,7 +31,7 @@ body{
   font-size: 20px;
   position: absolute;
   top: 50%;
-  left: 200px;
+  left: 450px;
   color: white;
 }
 
@@ -34,7 +39,7 @@ body{
   font-size: 20px;
   position: absolute;
   top: 50%;
-  left: 400px;
+  left: 700px;
   color: white;
 }
 
@@ -42,7 +47,7 @@ body{
   font-size: 20px;
   position: absolute;
   top: 50%;
-  left: 600px;
+  left: 850px;
   color: white;
 }
 
@@ -50,7 +55,7 @@ body{
   font-size: 20px;
   position: absolute;
   top: 50%;
-  left: 800px;
+  left: 900px;
   color: white;
 }
 
