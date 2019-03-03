@@ -9,10 +9,12 @@ body{
 
 #outsideblock{
   background-image:url('./tour.jpg');
-  width: 960px;
-  height: 540px;
+  width: 1440px;
+  height: 810px;
   opacity: 0.5;
-  margin: 0px auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
 }
 
 #title{
