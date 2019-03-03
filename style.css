@@ -17,6 +17,7 @@ body{
   bottom: 0;
   left: 0;
   margin: auto;
+  z-index: -2;
 }
 
 #title{
@@ -71,8 +72,8 @@ body{
 
 #paris{
   background-image: url('./paris.jpg');
-  width: 375px;
-  height: 750px;
+  width: 180px;
+  height: 370px;
   position: absolute;
   left: 320px;
   top: 20%;
