@@ -8,7 +8,7 @@ body{
 
 
 #outsideblock{
-  background-image:url('./tour.jpg');
+  background-color: #171717;
   width: 1440px;
   height: 810px;
   position: absolute;
@@ -17,7 +17,6 @@ body{
   bottom: 0;
   left: 0;
   margin: auto;
-  background-color: rgba(255,255,255,0.5);
 }
 
 #title{
@@ -67,4 +66,14 @@ body{
   height: 5px;
   background-color: #AAAAAA;
 }
+
+#paris{
+  background-image: url('./paris.jpg');
+  width: 375px;
+  height: 775px;
+  position: absolute;
+  left: 320px;
+  top: 50%;
+}
+
 
