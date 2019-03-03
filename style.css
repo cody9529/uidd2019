@@ -1,12 +1,11 @@
-<style>
-  body{
-    background-image:url('./tour.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-  }
-</style>
+
+body{
+  background-image:url('./tour');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.5;
+}
 
 
 #middle_1{
