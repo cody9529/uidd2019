@@ -91,3 +91,13 @@ body{
   left: 250px;
 }
 
+#searchicon{
+  background-image: url('searchicon.png');
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  margin: auto;
+  top: 20px;
+}
+
+
