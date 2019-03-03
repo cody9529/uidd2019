@@ -93,11 +93,12 @@ body{
 
 #searchicon{
   background-image: url('searchicon.png');
+  position: absolute;
   width: 20px;
   height: 20px;
   background-size: contain;
-  margin: auto;
   top: 20px;
+  right: 30px;
 }
 
 
