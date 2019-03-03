@@ -81,9 +81,11 @@ body{
 }
 
 #barin{
+  position: absolute;
   background-color: #AD0000;
   width: 200px;
   height: 5px;
+  top: 55%;
   z-index: 1;
   left: 250px;
 }
