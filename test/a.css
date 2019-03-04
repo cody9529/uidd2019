@@ -1,0 +1,29 @@
+[draggable="true"] {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+#drag-drop-basic{
+  display: flex;
+
+  #source-container{
+    height: 400px;
+    border: 2px solid #CCC;
+    flex: 1;
+  }
+
+  #target-container{
+    height: 400px;
+    border: 2px solid #CCC;
+    flex: 1;
+  }
+
+  #drag-source{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: steelblue;
+  }
+}
