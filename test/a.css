@@ -7,46 +7,65 @@ body{
 }
 
 #drag-1{
-  background-image: url('./2-09li.png');
+  position: absolute;
   width: 126px;
   height: 126px;
   top: 70%;
   left: 55%;
-  margin: 10%;
-  user-select: none;
-  -webkit-transform: translate(0px, 0px);
 }
 
 #drag-2 {
-  background-image: url('./2-10li.png');
+  position: absolute;
   width: 126px;
   height: 126px;
   top: 70%;
   left: 62%;
-  margin: 10%;
-  user-select: none;
-  -webkit-transform: translate(0px, 0px);
 }
 
 #drag-3 {
-  background-image: url('./2-11li.png');
+  position: absolute;
   width: 126px;
   height: 126px;
   top: 70%;
   left: 68%;
-  margin: 10%;
-  user-select: none;
-  -webkit-transform: translate(0px, 0px);
 }
 
 #drag-4 {
-  background-image: url('./2-12li.png');
+  position: absolute;
   width: 126px;
   height: 126px;
   top: 70%;
   left: 74%;
-  margin: 10%;
-  user-select: none;
-  -webkit-transform: translate(0px, 0px);
+}
+
+#box-1{
+  position:: absolute;
+  width: 252px;
+  height: 252px;
+  top: 15%;
+  left: 55%;
+}
+
+#box-2{
+  position:: absolute;
+  width: 252px;
+  height: 252px;
+  top: 15%;
+  left: 70%;
+}
+
+#box-1{
+  position:: absolute;
+  width: 252px;
+  height: 252px;
+  top: 35%;
+  left: 55%;
+}
+#box-1{
+  position:: absolute;
+  width: 252px;
+  height: 252px;
+  top: 35%;
+  left: 70%;
 }
 
