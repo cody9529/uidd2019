@@ -1,10 +1,36 @@
-#drag-1, #drag-2 {
+#drag-1{
   background-image: url('./2-09.png');
   width: 252px;
   height: 252px;
   margin: 10%;
-  padding: 4%;
   user-select: none;
   -webkit-transform: translate(0px, 0px);
-          transform: translate(0px, 0px);
 }
+
+#drag-2 {
+  background-image: url('./2-10.png');
+  width: 252px;
+  height: 252px;
+  margin: 10%;
+  user-select: none;
+  -webkit-transform: translate(0px, 0px);
+}
+
+#drag-3 {
+  background-image: url('./2-11.png');
+  width: 252px;
+  height: 252px;
+  margin: 10%;
+  user-select: none;
+  -webkit-transform: translate(0px, 0px);
+}
+
+#drag-4 {
+  background-image: url('./2-12.png');
+  width: 252px;
+  height: 252px;
+  margin: 10%;
+  user-select: none;
+  -webkit-transform: translate(0px, 0px);
+}
+
