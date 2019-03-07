@@ -1,55 +1,56 @@
+$ npm install interactjs
 
-let sourceContainerId = "";
+import interact from 'interactjs'
 
-// Allow multiple draggable items
-let dragSources = document.querySelectorAll('[draggable="true"]');
-dragSources.forEach(dragSource => {
-    dragSource.addEventListener("dragstart", dragStart);
-    dragSource.addEventListener("dragend", dragEnd);
-});
+interact('.item').draggable({
+  onmove(event) {
+    console.log(event.pageX,
+                event.pageY)
+  }
+})
 
-function dragStart(e) {
-    this.classList.add("dragging");
-    e.dataTransfer.setData("text/plain", e.target.id);
-    sourceContainerId = this.parentElement.id;
-}
+interact('.draggable')
+  .draggable({
+    // enable inertial throwing
+    inertia: true,
+    // keep the element within the area of it's parent
+    restrict: {
+      restriction: "parent",
+      endOnly: true,
+      elementRect: { top: 0, left: 0, bottom: 1, right: 1 }
+    },
+    // enable autoScroll
+    autoScroll: true,
 
-function dragEnd(e) {
-    this.classList.remove("dragging");
-}
+    // call this function on every dragmove event
+    onmove: dragMoveListener,
+    // call this function on every dragend event
+    onend: function (event) {
+      var textEl = event.target.querySelector('p');
 
-// Allow multiple dropped targets
-let dropTargets = document.querySelectorAll(
-    '[data-role="drag-drop-container"]'
-);
-dropTargets.forEach(dropTarget => {
-    dropTarget.addEventListener("drop", dropped);
-    dropTarget.addEventListener("dragenter", cancelDefault);
-    dropTarget.addEventListener("dragover", dragOver);
-    dropTarget.addEventListener("dragleave", dragLeave);
-});
-
-function dropped(e) {
-    // execute function only when target container is different from source container
-    if (this.id !== sourceContainerId) {
-        cancelDefault(e);
-        let id = e.dataTransfer.getData("text/plain");
-        e.target.appendChild(document.querySelector("#" + id));
-        this.classList.remove("hover");
+      textEl && (textEl.textContent =
+        'moved a distance of '
+        + (Math.sqrt(Math.pow(event.pageX - event.x0, 2) +
+                     Math.pow(event.pageY - event.y0, 2) | 0))
+            .toFixed(2) + 'px');
     }
-}
+  });
 
-function dragOver(e) {
-    cancelDefault(e);
-    this.classList.add("hover");
-}
+  function dragMoveListener (event) {
+    var target = event.target,
+        // keep the dragged position in the data-x/data-y attributes
+        x = (parseFloat(target.getAttribute('data-x')) || 0) + event.dx,
+        y = (parseFloat(target.getAttribute('data-y')) || 0) + event.dy;
 
-function dragLeave(e) {
-    this.classList.remove("hover");
-}
+    // translate the element
+    target.style.webkitTransform =
+    target.style.transform =
+      'translate(' + x + 'px, ' + y + 'px)';
 
-function cancelDefault(e) {
-    e.preventDefault();
-    e.stopPropagation();
-    return false;
-}
+    // update the posiion attributes
+    target.setAttribute('data-x', x);
+    target.setAttribute('data-y', y);
+  }
+
+  // this is used later in the resizing and gesture demos
+  window.dragMoveListener = dragMoveListener;
