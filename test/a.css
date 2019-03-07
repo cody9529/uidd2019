@@ -10,7 +10,7 @@ body{
   position: absolute;
   width: 126px;
   height: 126px;
-  top: 70%;
+  top: 72%;
   left: 55%;
 }
 
@@ -18,24 +18,24 @@ body{
   position: absolute;
   width: 126px;
   height: 126px;
-  top: 70%;
-  left: 65%;
+  top: 72%;
+  left: 63%;
 }
 
 #drag-3 {
   position: absolute;
   width: 126px;
   height: 126px;
-  top: 70%;
-  left: 75%;
+  top: 72%;
+  left: 71%;
 }
 
 #drag-4 {
   position: absolute;
   width: 126px;
   height: 126px;
-  top: 70%;
-  left: 85%;
+  top: 72%;
+  left: 79%;
 }
 
 #box-1{
@@ -43,7 +43,7 @@ body{
   border: 1px #ccc dashed;
   width: 252px;
   height: 252px;
-  top: 15%;
+  top: 17%;
   left: 55%;
 }
 
@@ -53,8 +53,8 @@ body{
   border: 1px #ccc dashed;
   width: 252px;
   height: 252px;
-  top: 15%;
-  left: 75%;
+  top: 17%;
+  left: 70%;
 }
 
 #box-3{
@@ -62,7 +62,7 @@ body{
   border: 1px #ccc dashed;
   width: 252px;
   height: 252px;
-  top: 40%;
+  top: 43%;
   left: 55%;
 }
 #box-4{
@@ -70,7 +70,7 @@ body{
   border: 1px #ccc dashed;
   width: 252px;
   height: 252px;
-  top: 40%;
-  left: 75%;
+  top: 43%;
+  left: 70%;
 }
 
