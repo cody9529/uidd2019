@@ -2,7 +2,7 @@ body{
   background-image: url('./3-01-01.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center top;
+  background-position: center;
   background-size: cover;
 }
 
