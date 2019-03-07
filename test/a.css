@@ -10,7 +10,7 @@ body{
   position: absolute;
   width: 126px;
   height: 126px;
-  top: 75%;
+  top: 77%;
   left: 55%;
 }
 
@@ -18,7 +18,7 @@ body{
   position: absolute;
   width: 126px;
   height: 126px;
-  top: 75%;
+  top: 77%;
   left: 63%;
 }
 
@@ -26,7 +26,7 @@ body{
   position: absolute;
   width: 126px;
   height: 126px;
-  top: 75%;
+  top: 77%;
   left: 71%;
 }
 
@@ -34,7 +34,7 @@ body{
   position: absolute;
   width: 126px;
   height: 126px;
-  top: 75%;
+  top: 77%;
   left: 79%;
 }
 
@@ -44,7 +44,7 @@ body{
   width: 252px;
   height: 252px;
   top: 20%;
-  left: 60%;
+  left: 57%;
 }
 
 #box-2{
@@ -54,7 +54,7 @@ body{
   width: 252px;
   height: 252px;
   top: 20%;
-  left: 73%;
+  left: 71%;
 }
 
 #box-3{
@@ -63,7 +63,7 @@ body{
   width: 252px;
   height: 252px;
   top: 48%;
-  left: 60%;
+  left: 57%;
 }
 #box-4{
   position: absolute;
@@ -71,6 +71,6 @@ body{
   width: 252px;
   height: 252px;
   top: 48%;
-  left: 73%;
+  left: 71%;
 }
 
