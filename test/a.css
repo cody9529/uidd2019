@@ -2,14 +2,16 @@ body{
   background-image: url('./3-01-01.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: top;
+  background-position: center top;
   background-size: cover;
 }
 
 #drag-1{
   background-image: url('./2-09li.png');
-  width: 252px;
-  height: 252px;
+  width: 126px;
+  height: 126px;
+  top: 70%;
+  left: 55%;
   margin: 10%;
   user-select: none;
   -webkit-transform: translate(0px, 0px);
@@ -17,8 +19,10 @@ body{
 
 #drag-2 {
   background-image: url('./2-10li.png');
-  width: 252px;
-  height: 252px;
+  width: 126px;
+  height: 126px;
+  top: 70%;
+  left: 62%;
   margin: 10%;
   user-select: none;
   -webkit-transform: translate(0px, 0px);
@@ -26,8 +30,10 @@ body{
 
 #drag-3 {
   background-image: url('./2-11li.png');
-  width: 252px;
-  height: 252px;
+  width: 126px;
+  height: 126px;
+  top: 70%;
+  left: 68%;
   margin: 10%;
   user-select: none;
   -webkit-transform: translate(0px, 0px);
@@ -35,8 +41,10 @@ body{
 
 #drag-4 {
   background-image: url('./2-12li.png');
-  width: 252px;
-  height: 252px;
+  width: 126px;
+  height: 126px;
+  top: 70%;
+  left: 74%;
   margin: 10%;
   user-select: none;
   -webkit-transform: translate(0px, 0px);
