@@ -40,6 +40,7 @@ body{
 
 #box-1{
   position:: absolute;
+  border: 1px;
   width: 252px;
   height: 252px;
   top: 15%;
@@ -48,21 +49,24 @@ body{
 
 #box-2{
   position:: absolute;
+  border: 1px;
   width: 252px;
   height: 252px;
   top: 15%;
   left: 70%;
 }
 
-#box-1{
+#box-3{
   position:: absolute;
+  border: 1px;
   width: 252px;
   height: 252px;
   top: 35%;
   left: 55%;
 }
-#box-1{
+#box-4{
   position:: absolute;
+  border: 1px;
   width: 252px;
   height: 252px;
   top: 35%;
