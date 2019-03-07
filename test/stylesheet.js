@@ -1,4 +1,3 @@
-$ npm install interactjs
 
 import interact from 'interactjs'
 
