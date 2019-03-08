@@ -66,6 +66,7 @@ body{
 
 #box-1{
   position: absolute;
+  background-image: url('./2-05.png');
   width: 200px;
   height: 200px;
   top: 200px;
@@ -74,6 +75,7 @@ body{
 
 #box-2{
   position: absolute;
+  background-image: url('./2-06.png');
   width: 200px;
   height: 200px;
   top: 200px;
@@ -82,6 +84,7 @@ body{
 
 #box-3{
   position: absolute;
+  background-image: url('./2-07.png');
   width: 200px;
   height: 200px;
   top: 410px;
@@ -89,6 +92,7 @@ body{
 }
 #box-4{
   position: absolute;
+  background-image: url('./2-08.png');
   width: 200px;
   height: 200px;
   top: 410px;
