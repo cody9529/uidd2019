@@ -32,37 +32,15 @@ body{
 }
 
 
-#drag-1{
+#drag{
   position: absolute;
-  width: 126px;
+  display: inline-block;
+  width: 130px;
   height: 126px;
   top: 77%;
   left: 55%;
 }
 
-#drag-2 {
-  position: absolute;
-  width: 126px;
-  height: 126px;
-  top: 77%;
-  left: 63%;
-}
-
-#drag-3 {
-  position: absolute;
-  width: 126px;
-  height: 126px;
-  top: 77%;
-  left: 71%;
-}
-
-#drag-4 {
-  position: absolute;
-  width: 126px;
-  height: 126px;
-  top: 77%;
-  left: 79%;
-}
 
 #box-1{
   position: absolute;
