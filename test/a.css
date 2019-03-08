@@ -30,7 +30,10 @@ body{
   height: 100%;
   right: 180px;
 }
-
+#changeicon{
+  position: absolute;
+  top: 55%;
+}
 
 #drag-1{
   position: absolute;
@@ -63,37 +66,32 @@ body{
 
 #box-1{
   position: absolute;
-  border: 1px #ccc dashed;
-  width: 252px;
-  height: 252px;
-  top: 20%;
-  left: 57%;
+  width: 200px;
+  height: 200px;
+  top: 250px;
+  right: 700px;
 }
 
 #box-2{
   position: absolute;
-  width: 126px;
-  border: 1px #ccc dashed;
-  width: 252px;
-  height: 252px;
-  top: 20%;
-  left: 71%;
+  width: 200px;
+  height: 200px;
+  top: 250px;
+  right: 500px;
 }
 
 #box-3{
   position: absolute;
-  border: 1px #ccc dashed;
-  width: 252px;
-  height: 252px;
-  top: 48%;
-  left: 57%;
+  width: 200px;
+  height: 200px;
+  top: 450px;
+  right: 700px;
 }
 #box-4{
   position: absolute;
-  border: 1px #ccc dashed;
-  width: 252px;
-  height: 252px;
-  top: 48%;
-  left: 71%;
+  width: 200px;
+  height: 200px;
+  top: 450px;
+  right: 500px;
 }
 
