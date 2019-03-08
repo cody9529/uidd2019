@@ -32,15 +32,34 @@ body{
 }
 
 
-#drag{
+#drag-1{
   position: absolute;
-  display: inline-block;
   width: 130px;
   height: 126px;
-  top: 77%;
-  left: 55%;
+  top: 73%;
+  right: 700px;
 }
-
+#drag-2{
+  position: absolute;
+  width: 130px;
+  height: 126px;
+  top: 73%;
+  right: 570px;
+}
+#drag-3{
+  position: absolute;
+  width: 130px;
+  height: 126px;
+  top: 73%;
+  right: 440px;
+}
+#drag-4{
+  position: absolute;
+  width: 130px;
+  height: 126px;
+  top: 73%;
+  right: 310px;
+}
 
 #box-1{
   position: absolute;
