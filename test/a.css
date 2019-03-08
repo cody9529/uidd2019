@@ -9,7 +9,7 @@ body{
 #topbar{
   position: absolute;
   width: 100%;
-  height: 100px;
+  height: 70px;
   top: 5%;
 }
 #homeicon{
@@ -20,21 +20,15 @@ body{
 }
 #qicon{
 	position: absolute;
-	width: 100px;
+	width: 70px;
 	height:100%;
-	right: 17%;
+	right: 250px;
 }
-#homeicon img{
-	max-width:100px;
-  height:inherit;
-  width:expression(document.body.clientWidth&gt;100?"100px""auto");/*若圖片大於550px就調整*/
-  overflow:hidden;      /*超過不顯示*/
-}
-#qicon img{
-	max-width:100px;
-  height:inherit;
-  width:expression(document.body.clientWidth&gt;100?"100px""auto");/*若圖片大於550px就調整*/
-  overflow:hidden;      /*超過不顯示*/
+#foodicon{
+  position: absolute;
+  width: 140px;
+  height: 100%;
+  right: 180px;
 }
 
 
