@@ -40,58 +40,58 @@ body{
   width: 130px;
   height: 126px;
   top: 73%;
-  right: 700px;
+  right: 730px;
 }
 #drag-2{
   position: absolute;
   width: 130px;
   height: 126px;
   top: 73%;
-  right: 570px;
+  right: 600px;
 }
 #drag-3{
   position: absolute;
   width: 130px;
   height: 126px;
   top: 73%;
-  right: 440px;
+  right: 470px;
 }
 #drag-4{
   position: absolute;
   width: 130px;
   height: 126px;
   top: 73%;
-  right: 310px;
+  right: 340px;
 }
 
 #box-1{
   position: absolute;
   width: 200px;
   height: 200px;
-  top: 250px;
-  right: 700px;
+  top: 200px;
+  right: 680px;
 }
 
 #box-2{
   position: absolute;
   width: 200px;
   height: 200px;
-  top: 250px;
-  right: 500px;
+  top: 200px;
+  right: 470px;
 }
 
 #box-3{
   position: absolute;
   width: 200px;
   height: 200px;
-  top: 450px;
-  right: 700px;
+  top: 410px;
+  right:680px;
 }
 #box-4{
   position: absolute;
   width: 200px;
   height: 200px;
-  top: 450px;
-  right: 500px;
+  top: 410px;
+  right: 470px;
 }
 
