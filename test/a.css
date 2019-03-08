@@ -40,28 +40,28 @@ body{
   width: 130px;
   height: 126px;
   top: 73%;
-  right: 730px;
+  right: 765px;
 }
 #drag-2{
   position: absolute;
   width: 130px;
   height: 126px;
   top: 73%;
-  right: 600px;
+  right: 635px;
 }
 #drag-3{
   position: absolute;
   width: 130px;
   height: 126px;
   top: 73%;
-  right: 470px;
+  right: 505px;
 }
 #drag-4{
   position: absolute;
   width: 130px;
   height: 126px;
   top: 73%;
-  right: 340px;
+  right: 375px;
 }
 
 #box-1{
@@ -69,7 +69,7 @@ body{
   width: 200px;
   height: 200px;
   top: 200px;
-  right: 680px;
+  right: 650px;
 }
 
 #box-2{
@@ -77,7 +77,7 @@ body{
   width: 200px;
   height: 200px;
   top: 200px;
-  right: 470px;
+  right: 440px;
 }
 
 #box-3{
@@ -85,13 +85,13 @@ body{
   width: 200px;
   height: 200px;
   top: 410px;
-  right:680px;
+  right:650px;
 }
 #box-4{
   position: absolute;
   width: 200px;
   height: 200px;
   top: 410px;
-  right: 470px;
+  right: 440px;
 }
 
