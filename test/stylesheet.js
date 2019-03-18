@@ -25,8 +25,6 @@ interact('.dropzone').dropzone({
     event.relatedTarget.classList.remove('can-drop')
   },
   ondrop: function (event) {
-    event.target.classList.remove('drop-active')
-    event.target.classList.remove('drop-target')
   },
   ondropdeactivate: function (event) {
     // remove active dropzone feedback
