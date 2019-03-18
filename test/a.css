@@ -72,6 +72,7 @@ body{
   height: 200px;
   top: 200px;
   right: 650px;
+  touch-action: none;
 }
 
 #box-2{
@@ -81,6 +82,7 @@ body{
   height: 200px;
   top: 200px;
   right: 440px;
+  touch-action: none;
 }
 
 #box-3{
@@ -90,6 +92,7 @@ body{
   height: 200px;
   top: 410px;
   right:650px;
+  touch-action: none;
 }
 #box-4{
   position: absolute;
@@ -98,8 +101,30 @@ body{
   height: 200px;
   top: 410px;
   right: 440px;
+  touch-action: none;
+}
+
+.dropzone {
+  border: dashed 4px transparent;
+  margin: 10px auto 30px;
+  padding: 10px;
+  width: 80%;
+}
+
+.drop-active {
 }
 
 .drop-target {
   border-style: solid;
+}
+
+.drag-drop {
+  min-width: 40px;
+  padding: 2em 0.5em;
+
+	-webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+}
+
+.drag-drop.can-drop {
 }
