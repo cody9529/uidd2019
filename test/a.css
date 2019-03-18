@@ -36,18 +36,28 @@ body{
   left: 10%;
 }
 
-#dragtt{
-  position: absolute;
-  height: 126px;
-  width: 520px;
+#drag-1{
+  position:absolute;
   top: 69%;
-  right: 19.5%;
-}
+  right: 700px;
+ }
 
-#drag-1, #drag-2, #drag-3, #drag-4{
-  -webkit-transform: translate(0px, 0px);
-          transform: translate(0px, 0px);
-}
+#drag-2{
+  position:absolute;
+  top: 69%;
+  right: 570px;
+ }
+#drag-3{
+  position:absolute;
+  top: 69%;
+  right: 440px;
+ }
+#drag-4{
+  position:absolute;
+  top: 69%;
+  right: 310px;
+ }
+
 
 #box-1{
   position: absolute;
@@ -101,7 +111,6 @@ body{
 }
 
 .drag-drop{
-  display: inline-block;
 
 	-webkit-transform: translate(0px, 0px);
           transform: translate(0px, 0px);
