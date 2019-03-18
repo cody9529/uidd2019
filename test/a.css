@@ -76,14 +76,13 @@ body{
 }
 
 .dropzone {
-  border: dashed 4px transparent;
-  border-radius: 4px;
 }
 
 .drop-active {
 }
 
 .drop-target {
+  border-color: #fff;
   border-style: solid;
 }
 
