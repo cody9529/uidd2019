@@ -36,6 +36,23 @@ body{
   left: 10%;
 }
 
+#drag-1{
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+        }
+#drag-2{
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+        }
+#drag-3{
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+        }
+#drag-4{
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+        }
+
 #box-1{
   position: absolute;
   background-image: url('./2-05.png');
@@ -82,7 +99,8 @@ body{
 }
 
 .drop-target {
-  border-color: #fff;
+  border-radius: 10px;
+  border-color: #aaa;
   border-style: solid;
 }
 
