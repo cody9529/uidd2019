@@ -65,4 +65,6 @@ function dragMoveListener (event) {
     target.setAttribute('data-y', y);
   }
 
+window.dragMoveListener = dragMoveListener;
+
 
