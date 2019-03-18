@@ -1,6 +1,7 @@
 
 interact('.dropzone').dropzone({
-  // only accept elements matching this CSS selector
+  // only accept elements matching this CSS selectori
+  accept: '.drag-drop',
   // Require a 75% element overlap for a drop to be possible
   overlap: 0.75,
 
