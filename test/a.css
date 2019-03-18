@@ -36,6 +36,44 @@ body{
   left: 10%;
 }
 
+#box-1{
+  position: absolute;
+  background-image: url('./2-05.png');
+  width: 200px;
+  height: 200px;
+  top: 200px;
+  right: 650px;
+  touch-action: none;
+}
+
+#box-2{
+  position: absolute;
+  background-image: url('./2-06.png');
+  width: 200px;
+  height: 200px;
+  top: 200px;
+  right: 440px;
+  touch-action: none;
+}
+
+#box-3{
+  position: absolute;
+  background-image: url('./2-07.png');
+  width: 200px;
+  height: 200px;
+  top: 410px;
+  right:650px;
+  touch-action: none;
+}
+#box-4{
+  position: absolute;
+  background-image: url('./2-08.png');
+  width: 200px;
+  height: 200px;
+  top: 410px;
+  right: 440px;
+  touch-action: none;
+}
 
 .dropzone {
 }
@@ -49,6 +87,7 @@ body{
 
 .drag-drop{
   display: inline-block;
+	top: 60%;
 
 	-webkit-transform: translate(0px, 0px);
           transform: translate(0px, 0px);
