@@ -76,6 +76,8 @@ body{
 }
 
 .dropzone {
+  border: dashed 4px transparent;
+  border-radius: 4px;
 }
 
 .drop-active {
@@ -87,9 +89,6 @@ body{
 
 .drag-drop{
   display: inline-block;
-  position: absolute;
-	top: 60%;
-  right: 50%;
 
 	-webkit-transform: translate(0px, 0px);
           transform: translate(0px, 0px);
