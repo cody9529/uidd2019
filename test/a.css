@@ -100,3 +100,6 @@ body{
   right: 440px;
 }
 
+.drop-target {
+  border-style: solid;
+}

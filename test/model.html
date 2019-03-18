@@ -8,6 +8,7 @@
 
 
   <body>
+    <script src="https://cdn.jsdelivr.net/npm/interactjs@next/dist/interact.min.js"></script>
     <script src="stylesheet.js"></script>
     <div id="topbar">
       <div id="homeicon">
@@ -26,23 +27,23 @@
       <img src="./landing page-24.png">
     </div>
 
-    <div id="drag-1">
-      <img id="img1" src="./2-09li.png" draggable="true" ondragstart="Drag(event)">
+    <div id="drag-1" class="drag-drop">
+      <img id="img1" src="./2-09li.png">
     </div>
-    <div id="drag-2">
-      <img id="img2" src="./2-10li.png" draggable="true" ondragstart="Drag(event)">
+    <div id="drag-2" class="drag-drop">
+      <img id="img2" src="./2-10li.png" >
     </div>
-    <div id="drag-3">
-      <img id="img3" src="./2-11li.png" draggable="true" ondragstart="Drag(event)">
+    <div id="drag-3" class="drag-drop">
+      <img id="img3" src="./2-11li.png">
     </div>
-    <div id="drag-4">
-      <img id="img4" src="./2-12li.png" draggable="true" ondragstart="Drag(event)">
+    <div id="drag-4" class="drag-drop">
+      <img id="img4" src="./2-12li.png">
     </div>
 
-    <div id="box-1" ondrop="Drop(event)" ondragover="AllowDrop(event)"></div>
-    <div id="box-2" ondrop="Drop(event)" ondragover="AllowDrop(event)"></div>
-    <div id="box-3" ondrop="Drop(event)" ondragover="AllowDrop(event)"></div>
-    <div id="box-4" ondrop="Drop(event)" ondragover="AllowDrop(event)"></div>
+    <div id="box-1" class="dropzone"></div>
+    <div id="box-2" class="dropzone"></div>
+    <div id="box-3" class="dropzone"></div>
+    <div id="box-4" class="dropzone"></div>
     <div style="clear:both;"></div>
     
 	</body>
