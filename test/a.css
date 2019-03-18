@@ -106,9 +106,6 @@ body{
 
 .dropzone {
   border: dashed 4px transparent;
-  margin: 10px auto 30px;
-  padding: 10px;
-  width: 80%;
 }
 
 .drop-active {
@@ -118,9 +115,7 @@ body{
   border-style: solid;
 }
 
-.drag-drop {
-  min-width: 40px;
-  padding: 2em 0.5em;
+.drag-drop{ 
 
 	-webkit-transform: translate(0px, 0px);
           transform: translate(0px, 0px);
