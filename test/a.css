@@ -36,6 +36,14 @@ body{
   left: 10%;
 }
 
+#drag{
+  position: absolute;
+  height: 126px;
+  width: 520px;
+  top: 65%;
+  right: 45;
+}
+
 #drag-1{
   -webkit-transform: translate(0px, 0px);
           transform: translate(0px, 0px);
@@ -99,7 +107,7 @@ body{
 }
 
 .drop-target {
-  border-radius: 10px;
+  border-radius: 50px;
   border-color: #aaa;
   border-style: solid;
 }
