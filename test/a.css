@@ -1,5 +1,5 @@
 body{
-  background-image: url('./10-25.png');
+  background-image: url('./9-21.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -33,7 +33,7 @@ body{
 #changeicon{
   position: absolute;
   top: 63%;
-  left: 10%;
+  left: 12%;
 }
 
 #drag-1{
