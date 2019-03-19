@@ -118,3 +118,16 @@ body{
 
 .drag-drop.can-drop {
 }
+
+.drop1{
+  background-image: url('./2-09.png');
+}
+.drop2{
+  background-image: url('./2-10.png');
+}
+.drop3{
+  background-image: url('./2-11.png');
+}
+.drop4{
+  background-image: url('./2-12.png');
+}
