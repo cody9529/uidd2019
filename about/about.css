@@ -26,6 +26,14 @@ body
   right: 50%;
 }
 
+#pica1{
+  display: absolute;
+  padding: 5px;
+  width: 350px;
+  top: 20%;
+  right: 50%;
+}
+
 #picb{
   display: absolute;
   padding: 5px;
