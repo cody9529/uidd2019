@@ -1,0 +1,73 @@
+body
+{
+    background: url("./src/BG1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0%;
+    border: 0;
+}
+
+#title{
+    font-family: url("./ARIALI.ttf");
+    font-size: 75px;
+    margin-left: 4%;
+    margin-top: 2%;
+}
+#dash{
+    text-decoration-color: black;
+}
+img{
+    display: inline-block;
+    padding:20px;
+    float: right;
+}
+
+#pic1{
+    
+}
+#pic2{
+
+}
+#pic3{
+
+}
+#pic4{
+
+}
+#pic5{
+
+}
+#pic6{
+
+}
+#pic7{
+
+}
+#pic8{
+
+}
+#pic9{
+
+}
+#pic10{
+
+}
+.picfront{
+    height: 300px;
+    width: alto;
+    position: relative;
+    top: 0%;
+    z-index: 1;
+    opacity:1;
+    transition-duration: 1s;
+}
+.picfront:hover{
+    opacity:0;
+}
+.picback{
+    height: 300px;
+    width: alto;
+    position: relative;
+    top: 0%;
+    z-index: 0;
+}
