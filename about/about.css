@@ -84,22 +84,4 @@ body
 #pic10{
 
 }
-.picfront{
-    height: 300px;
-    width: alto;
-    position: relative;
-    top: 0%;
-    z-index: 1;
-    opacity:1;
-    transition-duration: 1s;
-}
-.picfront:hover{
-    opacity:0;
-}
-.picback{
-    height: 300px;
-    width: alto;
-    position: relative;
-    top: 0%;
-    z-index: 0;
-}
+
