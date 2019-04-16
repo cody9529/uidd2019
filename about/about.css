@@ -21,6 +21,7 @@ body
 #pica{
   display: absolute;
   padding: 5px;
+  width: 350px;
   top: 20%;
   right: 50%;
 }
@@ -28,6 +29,7 @@ body
 #picb{
   display: absolute;
   padding: 5px;
+  width: 350px;
   top: 20%;
   right: 30%;
 }
@@ -35,6 +37,7 @@ body
 #picc{
   display: absolute;
   padding: 5px;
+  width: 350px;
   top: 50%;
   right: 70%;
 }
@@ -42,12 +45,14 @@ body
 #picd{
   display: absolute;
   padding: 5px;
+  width: 350px;
   top: 50%;
   right: 50%;
 }
 #pice{
   display: absolute;
   padding: 5px;
+  width: 350px;
   top: 50%;
   right: 30%;
 }
