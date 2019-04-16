@@ -11,5 +11,5 @@ $(document).ready(()=>{
                 $("#img1 img").attr("src","./man-06.jpg").fadeIn(300);
             });      
                   
-        }); 
+        })
 })
