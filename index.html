@@ -49,10 +49,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>
     function initMap() {
-	 // 載入路線服務與路線顯示圖層
-    	var directionsService = new google.maps.DirectionsService();
-    	var directionsDisplay = new google.maps.DirectionsRenderer();
-        
+	       
 	var latlng = { lat: 25.046891, lng: 121.516602 }; // 給一個初始位置
         var map = new google.maps.Map(document.getElementById('map'), {
             zoom: 14, //放大的倍率
@@ -76,12 +73,22 @@
                 map.setZoom(17);
                 map.setCenter(pos);
 
-		 // 放置路線圖層
+            });
+        } else {
+            // Browser doesn't support Geolocation
+            alert("未允許或遭遇錯誤！");
+        }
+    } //init_end
+	    	
+	 // 載入路線服務與路線顯示圖層
+    	var directionsService = new google.maps.DirectionsService();
+    	var directionsDisplay = new google.maps.DirectionsRenderer();
+	 // 放置路線圖層
     directionsDisplay.setMap(map);
 
     // 路線相關設定
     var request = {
-        origin: {pos},
+        origin: { lat: 22.988722, lng: 120.224597 },
         destination: { lat: 22.997322, lng: 120.212076 },
         travelMode: 'DRIVING'
     };
@@ -96,12 +103,6 @@
             console.log(status);
         }
     });
-            });
-        } else {
-            // Browser doesn't support Geolocation
-            alert("未允許或遭遇錯誤！");
-        }
-    } //init_end
     </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdr3awtNhGVsyHjO9Pf-xCQdWavK0g6Xw&callback=initMap">
     </script>
