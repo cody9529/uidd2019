@@ -24,6 +24,7 @@ body
   width: 350px;
   top: 20%;
   right: 50%;
+  z-index: 1;
 }
 
 #pica1{
@@ -32,6 +33,7 @@ body
   width: 350px;
   top: 20%;
   right: 50%;
+  z-index: -1;
 }
 
 #picb{
