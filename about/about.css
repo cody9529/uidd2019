@@ -8,6 +8,10 @@ body
     border: 0;
 }
 
+#topzone{
+  display: absolute;
+}
+
 #title{
     font-family: url("./ARIALI.ttf");
     font-size: 75px;
