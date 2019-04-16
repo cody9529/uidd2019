@@ -24,9 +24,8 @@ body
   width: 350px;
   top: 20%;
   right: 50%;
-  z-index: 1;
+  z-index: 0;
 }
-
 #pica1{
   display: absolute;
   padding: 5px;
