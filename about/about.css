@@ -21,12 +21,14 @@ body
 #pica{
   display: absolute;
   padding: 5px;
+  top: 20%;
   right: 50%;
 }
 
 #picb{
   display: absolute;
   padding: 5px;
+  top: 20%;
   right: 30%;
 }
 
