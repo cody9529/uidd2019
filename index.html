@@ -15,7 +15,6 @@
     #map {
 	position: absolute;
 	margin: 0px auto;
-        left: 10%;
         height: 70%;
         width: 70%;
     }
@@ -31,6 +30,10 @@
     h1 {
         text-align: center;
     }
+    h2 {
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.45);
+    }
 
     </style>
 </head>
@@ -38,6 +41,7 @@
 <body>
     <div class="body">
         <h1>GPS TEST</h1>
+	<h2 id="distime"></h2>
         <div id="map"></div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -93,7 +97,7 @@
         var Distance=route.legs[0].distance.text;
         // 取得路徑大約時間
         var Duration=route.legs[0].duration.text;
-        document.getElementById('map').innerHTML = Distance + ', ' + Duration ;
+        document.getElementById('distime').innerHTML = Distance + ', ' + Duration ;
     }
 		
         } else {
