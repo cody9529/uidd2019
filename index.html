@@ -14,7 +14,7 @@
 
     #map {
         position: absolute;
-        left: 20%;
+        left: 10%;
         height: 70%;
         width: 70%;
     }
@@ -55,12 +55,23 @@
             position: latlng,
             map: map
         });
+	    
+	// 放置路線圖層
+	directionsDisplay.setMap(map);
+	
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(function(position) {
                 var pos = {
                     lat: position.coords.latitude,
                     lng: position.coords.longitude
                 };
+		// 路線相關設定
+		var request = {
+       	 	    origin:  { lat: position.coords.latitude, lng: position.coords.longitude },
+        	    destination: { lat: 22.997322, lng: 120.212076 },
+        	    travelMode: 'DRIVING'
+    		};    
+		
                 var marker = new google.maps.Marker({
                     position: pos,
                     
@@ -68,16 +79,6 @@
                 });
                 map.setZoom(17);
                 map.setCenter(pos);
-
-		 // 放置路線圖層
-    directionsDisplay.setMap(map);
-
-    // 路線相關設定
-    var request = {
-        origin:  { lat: 22.994884, lng: 120.218053 },
-        destination: { lat: 22.997322, lng: 120.212076 },
-        travelMode: 'DRIVING'
-    };
 
     // 繪製路線
     directionsService.route(request, function (result, status) {
