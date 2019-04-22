@@ -48,6 +48,7 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>
+    var contentString = '<h1>台南火車站前站</h1>';
     function initMap() {
 	 // 載入路線服務與路線顯示圖層
     	var directionsService = new google.maps.DirectionsService();
@@ -80,6 +81,12 @@
                     
                     map: map
                 });
+		var infowindow = new google.maps.InfoWindow({
+    			content: contentString,
+    			position: position,
+    			maxWidth:200,
+    			pixelOffset: new google.maps.Size(100, -20) 
+  		});
                 map.setZoom(17);
                 map.setCenter(pos);
 
