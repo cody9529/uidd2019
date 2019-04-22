@@ -48,7 +48,7 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>
-    var contentString = '<h3>台南火車站前站</h3>';
+    
     function initMap() {
 	 // 載入路線服務與路線顯示圖層
     	var directionsService = new google.maps.DirectionsService();
@@ -80,13 +80,7 @@
                     position: pos,
                     map: map
                 });
-		var infowindow = new google.maps.InfoWindow({
-    			content: contentString,
-    			position: { lat: 22.997322, lng: 120.212076 },
-    			maxWidth:200,
-    			pixelOffset: new google.maps.Size(100, -20) 
-  		});
-		infowindow.open(map,marker);
+		
                 map.setZoom(17);
                 map.setCenter(pos);
 
@@ -102,7 +96,7 @@
         var Distance=route.legs[0].distance.text;
         // 取得路徑大約時間
         var Duration=route.legs[0].duration.text;
-        document.getElementById('distime').innerHTML = '距離:' + Distance + ',  預估時間:' + Duration ;
+        document.getElementById('distime').innerHTML = '距離:' + Distance + ',   預估時間:' + Duration ;
     }
 		
         } else {
