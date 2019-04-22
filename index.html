@@ -83,19 +83,14 @@
 
     // 繪製路線
     directionsService.route(request, function (result, status) {
-        if (status == 'OK') {
-            // 回傳路線上每個步驟的細節
-            console.log(result.routes[0].legs[0].steps);
-            directionsDisplay.setDirections(result);
-	var route = response.routes[0];
+        if (status == google.maps.DirectionsStatus.OK) {
+        var route = response.routes[0];
         // 取得距離
         var Distance=route.legs[0].distance.text;
         // 取得路徑大約時間
         var Duration=route.legs[0].duration.text;
-        document.getElementById('msg').innerHTML = Distance + ', ' + Duration ;
-        } else {
-            console.log(status);
-        }
+        document.getElementById('map').innerHTML = Distance + ', ' + Duration ;
+    }
     });
             });
         } else {
