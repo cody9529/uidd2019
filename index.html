@@ -53,7 +53,8 @@
 	 // 載入路線服務與路線顯示圖層
     	var directionsService = new google.maps.DirectionsService();
     	var directionsDisplay = new google.maps.DirectionsRenderer();
-        
+        var contentString = '<h3>黑膠漢堡</h3>';
+	    
 	var latlng = { lat: 25.046891, lng: 121.516602 }; // 給一個初始位置
         var map = new google.maps.Map(document.getElementById('map'), {
             zoom: 14, //放大的倍率
@@ -80,6 +81,14 @@
                     position: pos,
                     map: map
                 });
+		
+		var infowindow = new google.maps.InfoWindow({
+    		content: contentString,
+    		position: { lat: 22.997322, lng: 120.212076 },
+    		maxWidth:200,
+    		pixelOffset: new google.maps.Size(100, -20) 
+  		});
+  		infowindow.open(map,{ lat: 22.997322, lng: 120.212076 });
 		
                 map.setZoom(17);
                 map.setCenter(pos);
