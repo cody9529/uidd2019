@@ -82,13 +82,7 @@
                     map: map
                 });
 		
-		  var infowindow = new google.maps.InfoWindow({
-    		  content: contentString,
-   		  position: { lat: 22.997322, lng: 120.212076 },
-   		  maxWidth:200,
-   		  pixelOffset: new google.maps.Size(100, -20) 
-  		  });
- 		  infowindow.open(map);
+		
 		
                 map.setZoom(17);
                 map.setCenter(pos);
@@ -100,6 +94,13 @@
             console.log(result.routes[0].legs[0].steps);
             directionsDisplay.setDirections(result);
 	if (status == google.maps.DirectionsStatus.OK) {
+	var infowindow = new google.maps.InfoWindow({
+    		  content: contentString,
+   		  position: { lat: 22.997322, lng: 120.212076 },
+   		  maxWidth:200,
+   		  pixelOffset: new google.maps.Size(100, -20) 
+  		  });
+ 		  infowindow.open(map);
         var route = result.routes[0];
         // 取得距離
         var Distance=route.legs[0].distance.text;
