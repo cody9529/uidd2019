@@ -103,7 +103,7 @@
 		pixelOffset: new google.maps.Size(0, -50)
     		});
 		infowindow1.addListener('domready',function() {
-    		infowindow1.setContent(contentString1 + '<button id="btn1" onclick="myfunction()">選擇店面</button>');
+    		infowindow1.setContent(contentString1 + '<button id="btn1" onclick="myfunction1()">選擇店面</button>');
 			
 		});
 		    
@@ -120,7 +120,7 @@
   		infowindow1.open(map);
 		infowindow2.open(map);
 		
-		function myFunction(){
+		function myfunction1(){
 			document.getElementById('choose').innerHTML = "以選擇店面：台南車站店";
 		}
 		    
