@@ -40,7 +40,6 @@
         width: 100%;
         background-color: rgba(255, 255, 255, 0.45);
 	text-align: center;
-	top: 90%;
     }
 
     </style>
@@ -109,7 +108,7 @@
 		pixelOffset: new google.maps.Size(0, -50)
     		});
 		infowindow1.addListener('domready',function() {
-    		infowindow1.setContent(contentString1 + '<button id="btn1" onclick="myfunction1()">選擇店面</button>');
+    		infowindow1.setContent(contentString1 + '<button id="btn1">選擇店面</button>');
 			
 		});
 		    
@@ -187,9 +186,7 @@
         }
     } //init_end
 	    
-    function myfunction1(){
-    	document.getElementById('choose').innerHTML = "以選擇店面：台南車站店";
-    }
+   
 	    
     </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3-fExgqiJV_3JHHWNlxHDzT_dS-dtl24&callback=initMap">
