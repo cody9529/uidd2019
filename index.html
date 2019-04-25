@@ -48,7 +48,7 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>
-    <button id="btn1">選擇店面</button>
+    
     function initMap() {
 	 // 載入路線服務與路線顯示圖層
     	var directionsService = new google.maps.DirectionsService();
@@ -102,7 +102,7 @@
 		pixelOffset: new google.maps.Size(0, -50)
     		});
 		infowindow1.addListener('domready',function() {
-    		var btn = document.getElementById('btn1');
+    		infowindow1.setContent('<button id="btn1">選擇店面</button>');
 		});
 		    
 		var infowindow2 = new google.maps.InfoWindow({
