@@ -36,11 +36,7 @@
         background-color: rgba(255, 255, 255, 0.45);
 	text-align: center;
     }
-    h3 {
-        width: 100%;
-        background-color: rgba(255, 255, 255, 0.45);
-	text-align: center;
-    }
+    
 
     </style>
 </head>
@@ -119,7 +115,7 @@
 		pixelOffset: new google.maps.Size(0, -50)
     		});
 		infowindow2.addListener('domready',function() {
-    		infowindow2.setContent(contentString2 + '<button id="btn2">選擇店面</button>');
+    		infowindow2.setContent(contentString2 + '<button onclick="myFunction2()>選擇店面</button>');
 		});    
 		   
   		infowindow1.open(map);
@@ -189,7 +185,9 @@
    function myFunction1(){
 	   document.getElementById('ch').innerHTML = '已選擇店面：台南車站店' ;
     }
-    
+   function myFunction2(){
+	   document.getElementById('ch').innerHTML = '已選擇店面：林森店' ;
+    }
 	    
     </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3-fExgqiJV_3JHHWNlxHDzT_dS-dtl24&callback=initMap">
