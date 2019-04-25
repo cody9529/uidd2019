@@ -53,7 +53,7 @@
 	 // 載入路線服務與路線顯示圖層
     	var directionsService = new google.maps.DirectionsService();
     	var directionsDisplay = new google.maps.DirectionsRenderer();
-        var contentString = '黑膠漢堡';
+        var contentString = '黑膠漢堡(台南車站店)\n09xx-xxx-xxx';
 	    
 	var latlng = { lat: 25.046891, lng: 121.516602 }; // 給一個初始位置
         var map = new google.maps.Map(document.getElementById('map'), {
@@ -97,7 +97,7 @@
 	var infowindow = new google.maps.InfoWindow({
     	content: contentString,
     	position: { lat: 22.997322, lng: 120.212076 },
-    	maxWidth:200,
+    	maxWidth:300,
 	pixelOffset: new google.maps.Size(0, -50)
     	});
   	infowindow.open(map);
