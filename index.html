@@ -50,7 +50,7 @@
         <h1>GPS TEST => 點選地圖標記可顯示路徑規劃與預估時間</h1>
 	<h2 id="distime"></h2>
         <div id="map"></div>
-	<h3 id="choose"></h3>
+	<h3 id="ch"></h3>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>
@@ -108,7 +108,7 @@
 		pixelOffset: new google.maps.Size(0, -50)
     		});
 		infowindow1.addListener('domready',function() {
-    		infowindow1.setContent(contentString1 + '<button onclick="document.getElementById("choose").innerHTML ="已選擇店面：台南車站店"">選擇店面</button>');
+    		infowindow1.setContent(contentString1 + '<button onclick="document.getElementById('ch').innerHTML ="已選擇店面：台南車站店"">選擇店面</button>');
 			
 		});
 		    
