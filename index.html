@@ -120,9 +120,7 @@
   		infowindow1.open(map);
 		infowindow2.open(map);
 		
-		function myfunction1(){
-			document.getElementById('choose').innerHTML = "以選擇店面：台南車站店";
-		}
+
 		    
                 map.setZoom(14);
                 map.setCenter(pos);
@@ -182,6 +180,11 @@
             alert("未允許或遭遇錯誤！");
         }
     } //init_end
+	    
+    function myfunction1(){
+    	document.getElementById('choose').innerHTML = "以選擇店面：台南車站店";
+    }
+	    
     </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3-fExgqiJV_3JHHWNlxHDzT_dS-dtl24&callback=initMap">
     </script>
