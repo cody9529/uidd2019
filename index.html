@@ -94,7 +94,9 @@
 		
                 var marker = new google.maps.Marker({
                     position: pos,
-                    map: map
+                    map: map,
+		    zIndex:999,
+		    label: '我'
                 });
 		var marker1 = new google.maps.Marker({
                     position: { lat: 22.997322, lng: 120.212076 },
