@@ -49,6 +49,7 @@
 </head>
 
 <body>
+    <p style="display: none">Hello</p>
     <button id="mapb" type="button">地圖</button>
     <div class="body" style="display: none">
         <h1>GPS TEST => 點選地圖標記可顯示路線與時間</h1>
@@ -60,7 +61,8 @@
    
     <script>
 	$('mapb').click(function(){
-  	    $('.body').fadeIn('slow')
+  	     if($(".body").css("display")=='none'){
+                    $(".body").fadeIn(500);
 	})
     </script>
 	
