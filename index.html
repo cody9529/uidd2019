@@ -23,7 +23,6 @@
     #body {
         height: 70%;
         width: 70vw;
-	background-color: #FFDEDE;
         position: relative;
         top: 0;
         left: 0;
@@ -53,11 +52,13 @@
 <body>
     
     <button id="mapb" type="button">地圖</button>
-    <div class="body" style="display: none; background-color: #FFDEDE">
-        <h1>GPS TEST => 點選地圖標記可顯示路線與時間</h1>
-	<h2 id="distime"></h2>
-        <div id="map"></div>
-	<h3 id="ch"></h3>
+    <h3 id="ch"></h3>
+    <div class="body" style="display: none">
+	<div id="gbcolor" style="background-color: #FFDEDE">
+            <h1>GPS TEST => 點選地圖標記可顯示路線與時間</h1>
+	    <h2 id="distime"></h2>
+            <div id="map"></div>
+	</div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
    
