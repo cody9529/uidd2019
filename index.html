@@ -50,7 +50,7 @@
 
 <body>
     <p style="display: none">Hello</p>
-    <button id="mapb" type="button">地圖</button>
+    <button id="mapb" type="button" onclick="mapfunction()">地圖</button>
     <div class="body" style="display: none">
         <h1>GPS TEST => 點選地圖標記可顯示路線與時間</h1>
 	<h2 id="distime"></h2>
@@ -60,9 +60,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
    
     <script>
-	$('mapb').click(function(){
-  	    $('p').fadeIn('slow')
-	})
+	function mapfunction(){
+		$('p').fadeIn('slow')
+	}
     </script>
 	
     <script>
