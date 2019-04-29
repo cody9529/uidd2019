@@ -24,7 +24,7 @@
         height: 70%;
         width: 70vw;
         position: relative;
-	color: #FFDEDE;
+	background-color: #FFDEDE;
         top: 0;
         left: 0;
     }
@@ -34,14 +34,14 @@
     }
     h2 {
         width: 100%;
-        background-color: rgba(255, 255, 255, 0.45);
+        
 	text-align: center;
     }
     h3 {
 	position: absolute;
 	top: 90%;
         width: 100%;
-        background-color: rgba(255, 255, 255, 0.45);
+        
 	text-align: center;
     }
     
@@ -63,9 +63,9 @@
     <script>
 	$('#mapb').click(function(){
 		if($('.body').css("display")=='none'){
-			$('.body').slideDown(500)
+			$('.body').fadeIn(500)
 		}else{
-			$('.body').slideUp(500)
+			$('.body').fadeOut(500)
 		}
 	})
 		
