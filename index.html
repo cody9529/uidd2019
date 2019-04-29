@@ -24,7 +24,7 @@
         height: 70%;
         width: 70vw;
         position: relative;
-	background-color: #FFDEDE;
+	color: #FFDEDE;
         top: 0;
         left: 0;
     }
@@ -63,9 +63,9 @@
     <script>
 	$('#mapb').click(function(){
 		if($('.body').css("display")=='none'){
-			$('.body').fadeIn(500);
+			$('.body').slideRight(500)
 		}else{
-			$('.body').fadeOut(500);
+			$('.body').slideLeft(500)
 		}
 	})
 		
