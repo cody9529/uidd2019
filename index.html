@@ -14,11 +14,9 @@
 
     #map {
 	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
 	background-color: #FFDEDE;
-        height: 65%;
-        width: 65%;
+        height: 70%;
+        width: 70%;
     }
 	    
     #gbcolor {
@@ -39,12 +37,12 @@
 
    	    
     h1 {
-	max-width: 70%;
+	width: 70%;
         text-align: center;
 	background-color: #FFDEDE;
     }
     h2 {
-        max-width: 70%;
+        width: 70%;
         background-color: #FFDEDE;
 	text-align: center;
     }
@@ -67,9 +65,8 @@
     <div class="body" style="display: none">
 	<h1>GPS TEST => 點選地圖標記可顯示路線與時間</h1>
 	<h2 id="distime"></h2>
-	<div id="gbcolor">
-            <div id="map"></div>
-	</div>
+	<div id="map"></div>
+	
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
    
