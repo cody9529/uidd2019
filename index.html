@@ -20,7 +20,7 @@
         width: 70%;
     }
 
-    .body {
+    #body {
         height: 70%;
         width: 70vw;
 	background-color: #FFDEDE;
@@ -29,12 +29,7 @@
         left: 0;
     }
 
-    #mapb {
-	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
-    }
-	    
+   	    
     h1 {
         text-align: center;
     }
@@ -58,7 +53,7 @@
 <body>
     
     <button id="mapb" type="button">地圖</button>
-    <div class="body" style="display: none">
+    <div class="body" style="display: none; background-color: #FFDEDE">
         <h1>GPS TEST => 點選地圖標記可顯示路線與時間</h1>
 	<h2 id="distime"></h2>
         <div id="map"></div>
