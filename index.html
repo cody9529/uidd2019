@@ -62,7 +62,11 @@
    
     <script>
 	$('#mapb').click(function(){
-    		$('.body').fadeIn('slow')
+		if($('.body').css("display")=='none'){
+			$('.body').fadeIn(500);
+		}else{
+			$('.body').fadeOut(500);
+		}
 	})
 		
 	
