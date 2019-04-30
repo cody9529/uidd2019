@@ -87,15 +87,7 @@
 			$('.body').fadeOut(500)
 		}
 	})
-	$(function(){ 
-		$(document).bind("click",function(e){ 
-		var target = $(e.target); 
-		if(target.closest(".body").length == 0){ 
-			$(".body").hide(); 
-	} 
-	}) 
-	})
-		
+			
 	
     </script>
 	
@@ -237,9 +229,11 @@
     } //init_end
 	    
    function myFunction1(){
+	   $('.body').fadeOut(500)
 	   document.getElementById('ch').innerHTML = '已選擇店面：台南車站店' ;
     }
    function myFunction2(){
+	   $('.body').fadeOut(500)
 	   document.getElementById('ch').innerHTML = '已選擇店面：林森店' ;
     }
 	    
