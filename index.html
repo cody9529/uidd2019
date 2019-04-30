@@ -87,6 +87,14 @@
 			$('.body').fadeOut(500)
 		}
 	})
+	$(function(){ 
+		$(document).bind("click",function(e){ 
+		var target = $(e.target); 
+		if(target.closest(".body").length == 0){ 
+			$(".body").hide(); 
+	} 
+	}) 
+	})
 		
 	
     </script>
