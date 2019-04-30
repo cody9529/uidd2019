@@ -67,7 +67,7 @@
 <body>
     
     <button id="mapb" type="button">地圖</button>
-    店家: <input type="text" name="store"><br>
+    店家: <output type="text" name="store" id="st"><br>
     <h3 id="ch">已選擇店面：</h3>
     <div class="body" style="display: none">
 	<h1>GPS TEST => 點選地圖標記可顯示路線與時間</h1>
@@ -227,7 +227,7 @@
     } //init_end
 	    
    function myFunction1(){
-	   document.getElementById('ch').innerHTML = '已選擇店面：台南車站店' ;
+	   document.getElementById('st').innerHTML = '台南車站店' ;
     }
    function myFunction2(){
 	   document.getElementById('ch').innerHTML = '已選擇店面：林森店' ;
