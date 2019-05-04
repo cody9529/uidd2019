@@ -132,6 +132,19 @@ body {
   border: 2px solid;
 }
 
+.wrap .mainbox {
+  position: absolute;
+  background-color: #FFECC9;
+  width: 88%;
+  height: 87%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  line-height: 400px;
+  float: right;
+  border: 2px solid blue;
+  border: 2px solid;
+}
+
 .shadow {
   position: inherit;
   width: 100%;
