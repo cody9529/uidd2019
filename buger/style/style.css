@@ -155,7 +155,7 @@ body {
 }
 
 .wrap .mainbox .step1 #step1icon {
-  top: 2%;
+  top: 0;
   width: 100%;
   height: 10%;
   background-image: url("../img/工作區域 10 (1).png");
@@ -167,7 +167,7 @@ body {
 }
 
 .wrap .mainbox .step1 h1 {
-  top: 13%;
+  top: 12%;
   left: 5%;
 }
 
