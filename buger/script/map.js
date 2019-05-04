@@ -2,8 +2,8 @@
 	 // 載入路線服務與路線顯示圖層
     	var directionsService = new google.maps.DirectionsService();
     	var directionsDisplay = new google.maps.DirectionsRenderer();
-        var contentString1 = "黑膠漢堡(台南車站店)</br>09xx-xxx-xxx</br></br>";
-	var contentString2 = "黑膠漢堡(林森店)</br>09xx-xxx-xxx</br></br>";
+        var contentString1 = "黑膠漢堡(台南車站店) </br>09xx-xxx-xxx </br></br>";
+	var contentString2 = "黑膠漢堡(林森店) </br>09xx-xxx-xxx </br></br>";
 	    
 	var latlng = { lat: 25.046891, lng: 121.516602 }; // 給一個初始位置
         var map = new google.maps.Map(document.getElementById('mapbox'), {
@@ -55,7 +55,7 @@
 		pixelOffset: new google.maps.Size(0, -40)
     		});
 		infowindow1.addListener('domready',function() {
-    		infowindow1.setContent(contentString1 + '<button>選擇店面</button>');
+    		infowindow1.setContent(contentString1 + '<button>選擇店面</br></button>');
 			
 		});
 		    
