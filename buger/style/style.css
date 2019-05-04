@@ -155,8 +155,12 @@ body {
 }
 
 .wrap .mainbox .step1 #mapbox {
-  width: 100%;
-  height: 70%;
+  position: absolute;
+  top: 18%;
+  left: 50%;
+	transform: translateX(-50%);
+  width: 300px;
+  height: 300px;
   -ms-flex-line-pack: center;
       align-content: center;
   border: 2px solid blue;
