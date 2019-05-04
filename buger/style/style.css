@@ -165,6 +165,11 @@ body {
   border: 2px solid;
 }
 
+.wrap .mainbox .step1 h1 {
+  top: 12%;
+  left: 5%;
+}
+
 .wrap .mainbox .step1 #mapbox {
   top: 18%;
   width: 85%;
@@ -177,7 +182,7 @@ body {
   border: 2px solid;
 }
 
-.wrap .mainbox .step1 h1 {
+.wrap .mainbox .step1 h2 {
   top: 65%;
   left: 5%;
 }
