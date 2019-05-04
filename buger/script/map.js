@@ -1,17 +1,17 @@
 function initMap() {
-	 // ¸ü¤J¸ô½uªA°È»P¸ô½uÅã¥Ü¹Ï¼h
+	 // è¼‰å…¥è·¯ç·šæœå‹™èˆ‡è·¯ç·šé¡¯ç¤ºåœ–å±¤
     	var directionsService = new google.maps.DirectionsService();
     	var directionsDisplay = new google.maps.DirectionsRenderer();
-        var contentString1 = "¶Â½¦º~³ù(¥x«n¨®¯¸©±)</br>09xx-xxx-xxx</br></br>";
-	var contentString2 = "¶Â½¦º~³ù(ªL´Ë©±)</br>09xx-xxx-xxx</br></br>";
+        var contentString1 = "é»‘è† æ¼¢å ¡(å°å—è»Šç«™åº—)</br>09xx-xxx-xxx</br></br>";
+	var contentString2 = "é»‘è† æ¼¢å ¡(æ—æ£®åº—)</br>09xx-xxx-xxx</br></br>";
 	    
-	var latlng = { lat: 25.046891, lng: 121.516602 }; // µ¹¤@­Óªì©l¦ì¸m
+	var latlng = { lat: 25.046891, lng: 121.516602 }; // çµ¦ä¸€å€‹åˆå§‹ä½ç½®
         var map = new google.maps.Map(document.getElementById('mapbox'), {
-            zoom: 14, //©ñ¤jªº­¿²v
-            center: latlng //ªì©l¤Æªº¦a¹Ï¤¤¤ß¦ì¸m
+            zoom: 14, //æ”¾å¤§çš„å€ç‡
+            center: latlng //åˆå§‹åŒ–çš„åœ°åœ–ä¸­å¿ƒä½ç½®
         });
         	    
-	// ©ñ¸m¸ô½u¹Ï¼h
+	// æ”¾ç½®è·¯ç·šåœ–å±¤
 	directionsDisplay.setMap(map);
 	
         if (navigator.geolocation) {
@@ -20,7 +20,7 @@ function initMap() {
                     lat: position.coords.latitude,
                     lng: position.coords.longitude
                 };
-		// ¸ô½u¬ÛÃö³]©w
+		// è·¯ç·šç›¸é—œè¨­å®š
 		var request1 = {
        	 	    origin:  { lat: position.coords.latitude, lng: position.coords.longitude },
         	    destination: { lat: 22.997322, lng: 120.212076 },
@@ -36,7 +36,7 @@ function initMap() {
                     position: pos,
                     map: map,
 		    zIndex:999,
-		    label: '§Ú'
+		    label: 'æˆ‘'
                 });
 		var marker1 = new google.maps.Marker({
                     position: { lat: 22.997322, lng: 120.212076 },
@@ -55,7 +55,7 @@ function initMap() {
 		pixelOffset: new google.maps.Size(0, -50)
     		});
 		infowindow1.addListener('domready',function() {
-    		infowindow1.setContent(contentString1 + '<button>¿ï¾Ü©±­±</button>');
+    		infowindow1.setContent(contentString1 + '<button onclick="myFunction1()">é¸æ“‡åº—é¢</button>');
 			
 		});
 		    
@@ -66,7 +66,7 @@ function initMap() {
 		pixelOffset: new google.maps.Size(0, -50)
     		});
 		infowindow2.addListener('domready',function() {
-    		infowindow2.setContent(contentString2 + '<button>¿ï¾Ü©±­±</button>');
+    		infowindow2.setContent(contentString2 + '<button onclick="myFunction2()">é¸æ“‡åº—é¢</button>');
 		});    
 		   
   		infowindow1.open(map);
@@ -75,20 +75,20 @@ function initMap() {
 		    
                 map.setZoom(14);
                 map.setCenter(pos);
-    // Ã¸»s¸ô½u
+    // ç¹ªè£½è·¯ç·š
     marker1.addListener('click',function(){
     
     directionsService.route(request1, function (result, status) {
         if (status == 'OK') {
-            // ¦^¶Ç¸ô½u¤W¨C­Ó¨BÆJªº²Ó¸`
+            // å›å‚³è·¯ç·šä¸Šæ¯å€‹æ­¥é©Ÿçš„ç´°ç¯€
             console.log(result.routes[0].legs[0].steps);
             directionsDisplay.setDirections(result);
 	if (status == google.maps.DirectionsStatus.OK) {
 	
         var route = result.routes[0];
-        // ¨ú±o¶ZÂ÷
+        // å–å¾—è·é›¢
         var Distance=route.legs[0].distance.text;
-        // ¨ú±o¸ô®|¤j¬ù®É¶¡
+        // å–å¾—è·¯å¾‘å¤§ç´„æ™‚é–“
         var Duration=route.legs[0].duration.text;
         
     }
@@ -103,15 +103,15 @@ function initMap() {
     
     directionsService.route(request2, function (result, status) {
         if (status == 'OK') {
-            // ¦^¶Ç¸ô½u¤W¨C­Ó¨BÆJªº²Ó¸`
+            // å›å‚³è·¯ç·šä¸Šæ¯å€‹æ­¥é©Ÿçš„ç´°ç¯€
             console.log(result.routes[0].legs[0].steps);
             directionsDisplay.setDirections(result);
 	if (status == google.maps.DirectionsStatus.OK) {
 	
         var route = result.routes[0];
-        // ¨ú±o¶ZÂ÷
+        // å–å¾—è·é›¢
         var Distance=route.legs[0].distance.text;
-        // ¨ú±o¸ô®|¤j¬ù®É¶¡
+        // å–å¾—è·¯å¾‘å¤§ç´„æ™‚é–“
         var Duration=route.legs[0].duration.text;
        
     }
@@ -126,6 +126,15 @@ function initMap() {
         });
 	}else {
             // Browser doesn't support Geolocation
-            alert("¥¼¤¹³\©Î¾D¹J¿ù»~¡I");
+            alert("æœªå…è¨±æˆ–é­é‡éŒ¯èª¤ï¼");
         }
     } //init_end
+
+function myFunction1(){
+	   
+	   document.getElementById('storeinfo').innerHTML = 'å·²é¸æ“‡åº—é¢ï¼šå°å—è»Šç«™åº—' ;
+    }
+function myFunction2(){
+	   
+	   document.getElementById('storeinfo').innerHTML = 'å·²é¸æ“‡åº—é¢ï¼šæ—æ£®åº—' ;
+    }
