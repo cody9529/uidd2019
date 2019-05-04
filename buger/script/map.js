@@ -52,7 +52,7 @@
     		content: contentString1,
     		position: { lat: 22.997322, lng: 120.212076 },
     		maxWidth:300,
-		pixelOffset: new google.maps.Size(0, -50)
+		pixelOffset: new google.maps.Size(0, -40)
     		});
 		infowindow1.addListener('domready',function() {
     		infowindow1.setContent(contentString1 + '<button>選擇店面</button>');
@@ -63,7 +63,7 @@
     		content: contentString2,
     		position: { lat: 22.988608, lng: 120.224096 },
     		maxWidth:300,
-		pixelOffset: new google.maps.Size(0, -50)
+		pixelOffset: new google.maps.Size(0, -40)
     		});
 		infowindow2.addListener('domready',function() {
     		infowindow2.setContent(contentString2 + '<button>選擇店面</button>');
