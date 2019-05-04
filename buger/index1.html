@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>unmmand retaurant</title>
+
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"
+        integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+
+    <!--為了MODEL加的，出問題優先刪除，提到上面讓下面覆寫-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <!---->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+
+</head>
+
+<body style="height:100vh;width:100vw;">
+
+
+    <div class="wrap">
+        <div class="shadow"></div>
+
+
+        <div class="container">
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog modal-lg">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Modal Header</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>Some text in the modal.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <nav></nav>
+        <div class="sidebar_region">
+            <div id="logo"></div>
+            <div class="side_icon" id='menber'></div>
+            <div class="side_icon" id='menu'></div>
+            <div class="side_icon" id='map'></div>
+        </div>
+
+        <div class="order_region">
+            <div class="hamburger" id='burger1'>
+                <div class="rating">
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="rating_text">0</span>
+                </div>
+                <div class="container container_pic">
+                    <p class="food_name">黑膠水擰乾堡</p>
+                    <p class="food_content">黑膠水 抹布 毛巾等</p>
+                    <p class="food_price">NTD.120</p>
+                </div>
+                <p class='cal'><span id='cal1'>487</span> (KCal)</p>
+                <div class="plus_btn" id='add_1' data-toggle="modal" data-target="#myModal"></div>
+            </div>
+
+
+
+            <div class="hamburger" id="burger2">
+                <div class="rating">
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="rating_text">5</span>
+                </div>
+                <div class="container container_pic">
+                    <p class="food_name">黑膠片薄奶油堡</p>
+                    <p class="food_content">黑膠唱片 奶油等</p>
+                    <p class="food_price">NTD.120</p>
+                </div>
+                <p class='cal'><span id='cal2'>487</span> (KCal)</p>
+                <div class="plus_btn" id='add_2'></div>
+            </div>
+
+
+
+            <div class="hamburger" id="burger3">
+                <div class="rating">
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="rating_text">10</span>
+                </div>
+                <div class="container container_pic">
+                    <p class="food_name">黑膠帶特濃富堅堡</p>
+                    <p class="food_content">黑膠帶 富堅 厚手指等</p>
+                    <p class="food_price">NTD.100</p>
+                </div>
+                <p class='cal'><span id='cal3'>487</span> (KCal)</p>
+                <div class="plus_btn" id='add_3'></div>
+            </div>
+
+
+
+            <div class="hamburger" id="burger4">
+                <div class="rating">
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="rating_text">0</span>
+                </div>
+                <div class="container container_pic">
+                    <p class="food_name">黑膠油溼答答堡</p>
+                    <p class="food_content">黑膠油 液體等</p>
+                    <p class="food_price">NTD.120</p>
+                </div>
+                <p class='cal'><span id='cal4'>487</span> (KCal)</p>
+                <div class="plus_btn" id='add_4'></div>
+            </div>
+
+        </div>
+
+        <div class="shopping_region">
+            <div class="shoping_cart">
+
+                <b class='total_pay'><span style="font-size: 20px;">TOTAL COST </span><span id='co'>0</span></b>
+
+                <div class="container" id='cart_pic'></div>
+                <div class="append_rigion">
+                    <!--div class="order_list animated bounceInRight 0.5s">
+                        <p class="order_name">黑胡椒</p>
+                        <p class="ingredient">材料</p>
+                        <p class="sauce">醬汁</p>
+                        <div class="delete_btn"></div>
+                        <p class="single_price">120</p>
+                        <p class='order_number'>1</p>
+                        <div class="add_btn">add</div>
+                        <div class="minus_btn">minus</div>
+                        <div class="price_non" style="display:none;">120</div-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="./script/min.js"></script>
+
+    <!--為了用modal加的，出問題優先刪除-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <!--------------------------------->
+
+</body>
+
+</html>
