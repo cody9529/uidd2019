@@ -149,4 +149,5 @@ function myFunction2(){
 	   
 	   document.getElementById('storeinfo1').innerHTML = '黑膠漢堡林森店' ;
 	   document.getElementById('storeinfo2').innerHTML = '地址：台南市東區崇善路151號</br>09xx-xxx-xxx' ;
+           document.getElementById('step1img').setAttribute("src", "./img/工作區域 11 (1).png");
     };
