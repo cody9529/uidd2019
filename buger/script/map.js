@@ -1,6 +1,7 @@
 
 function myFunctionchoose() {
 	$('#choosebotton img').hide();
+	$('#choosebotton').css("display")=='none';
 	$('#mapbox').show()
 	}
 
