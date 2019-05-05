@@ -1,3 +1,8 @@
+$('#choosebotton').click(function(){
+		$(#choosebotton).replaceWith(#mapbox);
+	})
+
+
 function initMap() {
 	 // 載入路線服務與路線顯示圖層
     	var directionsService = new google.maps.DirectionsService();
