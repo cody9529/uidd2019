@@ -167,12 +167,12 @@ body {
   border: 2px solid;
 }
 
-.wrap .mainbox .step1 h1 {
+.wrap .mainbox .step1 #choosestore {
   top: 11%;
   height: 10%;
-  line-height: 10%;
-  text-align: left;
   left: 10%;
+  text-align: left;
+  line-height: 2.5;
   font-size: 20px;
 }
 
