@@ -170,9 +170,9 @@ body {
 .wrap .mainbox .step1 #choosestore {
   top: 11%;
   height: 10%;
-  padding: 15px 0px 0px 8%;
+  padding: 8px 0px 0px 8%;
   text-align: left;
-  font-size: 30px;
+  font-size: 40px;
 }
 
 .wrap .mainbox .step1 #choosebotton {
