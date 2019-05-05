@@ -1,5 +1,5 @@
 $('#choosebotton').click(function(){
-		$(#choosebotton).replaceWith(#mapbox);
+		$('#choosebotton').replaceWith('#mapbox');
 	})
 
 
