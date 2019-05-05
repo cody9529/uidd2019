@@ -168,14 +168,15 @@ body {
 }
 
 .wrap .mainbox .step1 h1 {
-  top: 12%;
+  top: 11%;
+  height: 10%;
   left: 5%;
   font-size: 20px;
 }
 
 .wrap .mainbox .step1 #mapbox {
-  top: 20%;
-  width: 85%;
+  top: 22%;
+  width: 80%;
   height: 45%;
   left: 50%;
   transform: translateX(-50%);
