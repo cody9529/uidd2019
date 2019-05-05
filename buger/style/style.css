@@ -175,6 +175,20 @@ body {
   font-size: 30px;
 }
 
+.wrap .mainbox .step1 #choosebotton {
+  top: 0;
+  width: 65%;
+  height: 40%;
+  left: 50%;
+  background-image: url("../img/工作區域 40.png");
+  background-repeat: no-repeat;
+  transform: translateX(-65%);
+  -ms-flex-line-pack: center;
+      align-content: center;
+  border: 2px solid blue;
+  border: 2px solid;
+}
+
 .wrap .mainbox .step1 #mapbox {
   top: 0;
   width: 65%;
