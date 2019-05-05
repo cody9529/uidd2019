@@ -201,9 +201,17 @@ body {
 
 .wrap .mainbox .step1 #storeinfo1 {
   top: 70%;
+  height: 10%;
   padding: 15px 0px 0px 8%;
   text-align: left;
   font-size: 25px;
+}
+
+.wrap .mainbox .step1 #storeinfo2 {
+  top: 80%;
+  padding: 15px 0px 0px 8%;
+  text-align: left;
+  font-size: 18px;
 }
 
 .wrap .mainbox .step2 {
