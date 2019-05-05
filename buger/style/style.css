@@ -187,6 +187,7 @@ body {
       align-content: center;
   border: 2px solid blue;
   border: 2px solid;
+  z-index: 1;
 }
 
 .wrap .mainbox .step1 #mapbox {
@@ -199,6 +200,7 @@ body {
       align-content: center;
   border: 2px solid blue;
   border: 2px solid;
+  z-index: 0;
 }
 
 .wrap .mainbox .step1 #storeinfo1 {
