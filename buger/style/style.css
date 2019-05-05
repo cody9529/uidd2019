@@ -176,6 +176,7 @@ body {
 }
 
 .wrap .mainbox .step1 #choosebotton {
+  position: relative;
   top: 0;
   width: 65%;
   height: 40%;
@@ -191,6 +192,7 @@ body {
 }
 
 .wrap .mainbox .step1 #mapbox {
+  display: none;
   top: 0;
   width: 65%;
   height: 40%;
