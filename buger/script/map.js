@@ -12,7 +12,7 @@ function initMap() {
     	var directionsDisplay = new google.maps.DirectionsRenderer();
         var contentString1 = "台南車站店&emsp;</br>";
 	var contentString2 = "林森店&emsp;</br>";
-	var sss = "</br>"
+	var sss = "&emsp;</br>"
 	    
 	var latlng = { lat: 25.046891, lng: 121.516602 }; // 給一個初始位置
         var map = new google.maps.Map(document.getElementById('mapbox'), {
