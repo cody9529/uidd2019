@@ -195,8 +195,6 @@ body {
   transform: translateX(-55%);
   -ms-flex-line-pack: center;
       align-content: center;
-  border: 2px solid blue;
-  border: 2px solid;
   z-index: 0;
 }
 
