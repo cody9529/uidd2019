@@ -160,7 +160,7 @@ body {
   height: 10%;
   background-image: url("../img/工作區域 10 (1).png");
   background-repeat: no-repeat;
-  background-position: left bottom;
+  background-position: 10% bottom;
   -ms-flex-line-pack: center;
       align-content: center;
   border: 2px solid blue;
@@ -172,7 +172,7 @@ body {
   height: 10%;
   line-height: 10%;
   text-align: left;
-  left: 5%;
+  left: 10%;
   font-size: 20px;
 }
 
@@ -189,8 +189,8 @@ body {
 }
 
 .wrap .mainbox .step1 h2 {
-  top: 70%;
-  left: 5%;
+  top: 75%;
+  left: 10%;
 }
 
 .wrap .mainbox .step2 {
