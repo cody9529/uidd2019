@@ -128,13 +128,13 @@ function initMap() {
             // Browser doesn't support Geolocation
             alert("未允許或遭遇錯誤！");
         }
-    } //init_end
+    }; //init_end
 
 function myFunction1(){
 	   
-	   document.getElementById('storeinfo').innerHTML = '已選擇店面：台南車站店' ;
-    }
+  	   document.getElementById('storeinfo').innerHTML = '已選擇店面：台南車站店' ;
+    };
 function myFunction2(){
 	   
 	   document.getElementById('storeinfo').innerHTML = '已選擇店面：林森店' ;
-    }
+    };
