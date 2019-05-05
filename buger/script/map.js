@@ -61,7 +61,7 @@ function initMap() {
 		var infowindow1 = new google.maps.InfoWindow({
     		content: contentString1,
     		position: { lat: 22.997322, lng: 120.212076 },
-    		maxWidth:300,
+    		maxWidth:400,
 		pixelOffset: new google.maps.Size(0, -40)
     		});
 		infowindow1.addListener('domready',function() {
@@ -72,7 +72,7 @@ function initMap() {
 		var infowindow2 = new google.maps.InfoWindow({
     		content: contentString2,
     		position: { lat: 22.988608, lng: 120.224096 },
-    		maxWidth:300,
+    		maxWidth:400,
 		pixelOffset: new google.maps.Size(0, -40)
     		});
 		infowindow2.addListener('domready',function() {
