@@ -55,7 +55,7 @@ function initMap() {
 		pixelOffset: new google.maps.Size(0, -40)
     		});
 		infowindow1.addListener('domready',function() {
-    		infowindow1.setContent(contentString1 + '<button onclick="myFunction1()">選擇店面</button>＜br/>');
+    		infowindow1.setContent(contentString1 + '<button onclick="myFunction1()">選擇店面</button>'+</br>);
 			
 		});
 		    
@@ -66,7 +66,7 @@ function initMap() {
 		pixelOffset: new google.maps.Size(0, -40)
     		});
 		infowindow2.addListener('domready',function() {
-    		infowindow2.setContent(contentString2 + '<button onclick="myFunction2()">選擇店面</button>' + '＜br />');
+    		infowindow2.setContent(contentString2 + '<button onclick="myFunction2()">選擇店面</button>'+</br>);
 		});    
 		   
   		infowindow1.open(map);
