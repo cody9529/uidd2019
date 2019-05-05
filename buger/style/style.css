@@ -179,8 +179,6 @@ body {
   width: 65%;
   height: 40%;
   left: 50%;
-  background-image: url("../img/工作區域 40.png");
-  background-repeat: no-repeat;
   transform: translateX(-65%);
   -ms-flex-line-pack: center;
       align-content: center;
