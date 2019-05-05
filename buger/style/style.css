@@ -168,6 +168,7 @@ body {
   padding: 8px 0px 0px 8%;
   text-align: left;
   font-size: 40px;
+  font-weight: bold;
   font-family: Microsoft JhengHei;
 }
 
@@ -202,6 +203,7 @@ body {
   padding: 15px 0px 0px 8%;
   text-align: left;
   font-size: 25px;
+  font-weight: bold;
   font-family: Microsoft JhengHei;
 }
 
@@ -210,6 +212,7 @@ body {
   padding: 0px 0px 0px 8%;
   text-align: left;
   font-size: 16px;
+  font-weight: bold;
   font-family: Microsoft JhengHei;
 }
 
