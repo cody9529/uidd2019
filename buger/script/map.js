@@ -1,10 +1,8 @@
 
-
-$('#choosebottononclick').click(function(){
-	if($('#mapbox').css("display")=='none'){
-		$('#choosebotton').css("display")=='none'
+function myFunctionchoose() {
+	$('#choosebotton').css("display")=='none',
+	$('#mapbox').css("display")=='block'
 	}
-})
 
 
 function initMap() {
