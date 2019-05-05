@@ -1,6 +1,10 @@
+
+
 $('#choosebotton').click(function(){
-		$('#choosebotton').replaceWith('#mapbox');
-	})
+		$('#choosebotton').css("display")=='none',
+		$('#mapbox').css("display")=='block'
+		
+})
 
 
 function initMap() {
