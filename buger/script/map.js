@@ -141,9 +141,11 @@ function initMap() {
 
 function myFunction1(){
 	   
-  	   document.getElementById('storeinfo1').innerHTML = '黑膠漢堡台南車站店' ;
+  	   document.getElementById('storeinfo1').innerHTML = '黑膠漢堡台南車站店</br>' ;
+	   document.getElementById('storeinfo2').innerHTML = '地址：台南市中西區成功路</br>09xx-xxx-xxx' ;
     };
 function myFunction2(){
 	   
 	   document.getElementById('storeinfo1').innerHTML = '黑膠漢堡林森店' ;
+	   document.getElementById('storeinfo2').innerHTML = '地址：台南市東區崇善路151號</br>09xx-xxx-xxx' ;
     };
