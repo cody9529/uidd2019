@@ -2,8 +2,8 @@ function initMap() {
 	 // 載入路線服務與路線顯示圖層
     	var directionsService = new google.maps.DirectionsService();
     	var directionsDisplay = new google.maps.DirectionsRenderer();
-        var contentString1 = "黑膠漢堡(台南車站店)&nbsp;&nbsp;&nbsp;</br>09xx-xxx-xxx</br>";
-	var contentString2 = "黑膠漢堡(林森店)&nbsp;&nbsp;&nbsp;</br>09xx-xxx-xxx</br>";
+        var contentString1 = "黑膠漢堡(台南車站店)&emsp;</br>09xx-xxx-xxx</br>";
+	var contentString2 = "黑膠漢堡(林森店)&emsp;</br>09xx-xxx-xxx</br>";
 	    
 	var latlng = { lat: 25.046891, lng: 121.516602 }; // 給一個初始位置
         var map = new google.maps.Map(document.getElementById('mapbox'), {
@@ -55,7 +55,7 @@ function initMap() {
 		pixelOffset: new google.maps.Size(0, -40)
     		});
 		infowindow1.addListener('domready',function() {
-    		infowindow1.setContent(contentString1 + '<button onclick="myFunction1()">選擇店面</button>'+ </br>);
+    		infowindow1.setContent(contentString1 + '<button onclick="myFunction1()">選擇店面</button>'+ '</br>');
 			
 		});
 		    
@@ -66,7 +66,7 @@ function initMap() {
 		pixelOffset: new google.maps.Size(0, -40)
     		});
 		infowindow2.addListener('domready',function() {
-    		infowindow2.setContent(contentString2 + '<button onclick="myFunction2()">選擇店面</button>' + </br>);
+    		infowindow2.setContent(contentString2 + '<button onclick="myFunction2()">選擇店面</button>' + '</br>');
 		});    
 		   
   		infowindow1.open(map);
