@@ -170,6 +170,8 @@ body {
 .wrap .mainbox .step1 h1 {
   top: 11%;
   height: 10%;
+  line-height: 10%;
+  text-align: left;
   left: 5%;
   font-size: 20px;
 }
