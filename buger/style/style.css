@@ -163,8 +163,6 @@ body {
   background-position: 10% bottom;
   -ms-flex-line-pack: center;
       align-content: center;
-  border: 2px solid blue;
-  border: 2px solid;
 }
 
 .wrap .mainbox .step1 #choosestore {
@@ -186,8 +184,6 @@ body {
   transform: translateX(-65%);
   -ms-flex-line-pack: center;
       align-content: center;
-  border: 2px solid blue;
-  border: 2px solid;
   z-index: 1;
 }
 
