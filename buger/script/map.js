@@ -1,6 +1,6 @@
 
 
-$('#choosebotton').click(function(){
+$('#choosebottononclick').click(function(){
 	if($('#mapbox').css("display")=='none'){
 		$('#choosebotton').css("display")=='none'
 	}
