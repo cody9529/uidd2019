@@ -1,9 +1,9 @@
 
 
 $('#choosebotton').click(function(){
-		$('#choosebotton').css("display")=='none',
-		$('#mapbox').css("display")=='block'
-		
+	if($('#mapbox').css("display")=='none'){
+		$('#choosebotton').css("display")=='none'
+	}
 })
 
 
