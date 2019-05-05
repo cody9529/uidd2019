@@ -170,10 +170,9 @@ body {
 .wrap .mainbox .step1 #choosestore {
   top: 11%;
   height: 10%;
-  left: 10%;
+  padding:15px 0px 0px 25px;
   text-align: left;
-  line-height: 2.5;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 .wrap .mainbox .step1 #mapbox {
