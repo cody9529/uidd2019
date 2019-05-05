@@ -181,7 +181,7 @@ body {
   width: 80%;
   height: 45%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-54%);
   -ms-flex-line-pack: center;
       align-content: center;
   border: 2px solid blue;
