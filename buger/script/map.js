@@ -55,7 +55,7 @@ function initMap() {
 		pixelOffset: new google.maps.Size(0, -40)
     		});
 		infowindow1.addListener('domready',function() {
-    		infowindow1.setContent(contentString1 + '<button onclick="myFunction1()">選擇店面</button>'+</br>);
+    		infowindow1.setContent(contentString1 + '<button onclick="myFunction1()">選擇店面</button>');
 			
 		});
 		    
@@ -66,7 +66,7 @@ function initMap() {
 		pixelOffset: new google.maps.Size(0, -40)
     		});
 		infowindow2.addListener('domready',function() {
-    		infowindow2.setContent(contentString2 + '<button onclick="myFunction2()">選擇店面</button>'+</br>);
+    		infowindow2.setContent(contentString2 + '<button onclick="myFunction2()">選擇店面</button>');
 		});    
 		   
   		infowindow1.open(map);
@@ -132,9 +132,9 @@ function initMap() {
 
 function myFunction1(){
 	   
-  	   document.getElementById('storeinfo').innerHTML = '已選擇店面：台南車站店' ;
+  	   document.getElementById('storeinfo1').innerHTML = '黑膠漢堡台南車站店' ;
     };
 function myFunction2(){
 	   
-	   document.getElementById('storeinfo').innerHTML = '已選擇店面：林森店' ;
+	   document.getElementById('storeinfo1').innerHTML = '黑膠漢堡林森店' ;
     };
