@@ -148,6 +148,14 @@ $('#step1_btn').on('click', function () {
     $('#step3_btn').removeClass('red')
 })
 
+$('#chtext2').on('click', function () {
+    $('#step1_btn').addClass('red')
+    $('#step2_btn').removeClass('red')
+    $('#step3_btn').removeClass('red')
+    document.getElementById('storeinfo1').innerHTML = '' ;
+    document.getElementById('storeinfo2').innerHTML = '' ;
+})
+
 $('#step2_btn').on('click', function () {
     $('#step2_btn').addClass('red')
     $('#step1_btn').removeClass('red')
