@@ -169,10 +169,8 @@ function myFunction1(){
         } else {
             console.log(status);
         }
-    });
+    })
 	
-	html2canvas($("mapbox")).then(function(canvas) {
-          var $div = $("fieldset div");
     };
 function myFunction2(){
 	   
