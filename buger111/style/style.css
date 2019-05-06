@@ -21,7 +21,7 @@ body {
   left: 35%;
   -ms-flex-line-pack: center;
       align-content: center;
-  border: 2px solid;
+  //border: 2px solid;
 }
 
 .main #logo_img {
@@ -31,7 +31,7 @@ body {
   height: 70%;
   background-image: url("../img/logo.png");
   background-size: cover;
-  border: 2px solid;
+  //border: 2px solid;
 }
 
 .main #button_start {
@@ -39,7 +39,7 @@ body {
   bottom: 0%;
   width: 100%;
   height: 30%;
-  border: 2px solid;
+  //border: 2px solid;
 }
 
 .main .btn-primary {
@@ -54,7 +54,7 @@ body {
   width: 100%;
   margin: 0%;
   padding: 0%;
-  border: 3px solid red;
+  //border: 3px solid red;
 }
 
 .wrap nav {
@@ -63,7 +63,7 @@ body {
   text-align: center;
   float: right;
   clear: both;
-  border: 2px solid;
+  //border: 2px solid;
 }
 
 .wrap .sidebar_region {
@@ -74,8 +74,8 @@ body {
       align-content: center;
   line-height: 400px;
   float: left;
-  border: 2px solid blue;
-  border: 2px solid;
+  //border: 2px solid blue;
+  //border: 2px solid;
 }
 
 .wrap .sidebar_region #logo {
@@ -108,7 +108,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  border: 2px solid gray;
+  //border: 2px solid gray;
 }
 
 .wrap .order_region {
@@ -120,7 +120,7 @@ body {
       align-content: center;
   margin-left: 12%;
   margin-right: 36%;
-  border: 2px solid;
+  //border: 2px solid;
 }
 
 .wrap .shopping_region {
@@ -130,7 +130,7 @@ body {
   width: 36%;
   height: 81.3%;
   text-align: center;
-  border: 2px solid;
+  //border: 2px solid;
 }
 
 .wrap .mid_region {
@@ -139,7 +139,7 @@ body {
   position: absolute;
   right: 0%;
   bottom: 0%;
-  border: 3px solid red;
+ // border: 3px solid red;
 }
 
 .shadow {
