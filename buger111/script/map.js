@@ -153,7 +153,6 @@ function myFunction1(){
         	document.getElementById('mapboximgin').src = imgurl;
 		}
            });
-	   $('#mapbox').hide();
 	   $('#mapboximg').show();
     };
 function myFunction2(){
