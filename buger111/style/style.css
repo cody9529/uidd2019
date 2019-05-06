@@ -435,7 +435,7 @@ body {
 #storeinfo1 {
   top: 70%;
   height: 7%;
-  padding: 15px 0px 0px 8%;
+  padding: 15px 0px 0px 0px;
   text-align: left;
   font-size: 25px;
   font-weight: bold;
@@ -445,7 +445,7 @@ body {
 
 #storeinfo2 {
   top: 80%;
-  padding: 0px 0px 0px 8%;
+  padding: 0px 0px 0px 0px;
   text-align: left;
   font-size: 16px;
   font-weight: bold;
