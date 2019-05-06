@@ -147,11 +147,11 @@ function myFunction1(){
 	   document.getElementById('storeinfo2').innerHTML = '地址：台南市中西區成功路</br>09xx-xxx-xxx' ;
 	   $('#step2_btn').addClass('red');
     	   $('#step1_btn').removeClass('red');
-           html2canvas(document.querySelector("#mapbox")).then(canvas => {
-		document.body.appendChild(canvas);
-    		var imgurl = canvas.toDataURL("image/png", 1);
-		document.getElementById("#mapboximg").innerHTML= imgurl;
-	   });
+           html2canvas($("#mapbox")[0]).then(function(canvas) {
+           	var $div = $("#mapboximg");
+           	$div.empty();
+           	$("<img />", { src: canvas.toDataURL("image/png") }).appendTo($div);
+           });
 	   $('#mapbox').hide();
 	   $('#mapboximg').show();
     };
