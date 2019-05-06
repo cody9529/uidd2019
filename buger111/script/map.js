@@ -3,9 +3,9 @@
 function myFunctionchoose() {
 	$('#choosebotton img').hide();
 	$('#choosebotton').hide();
-	$('#mapbox').fadeIn(300);
+	$('#mapbox').fadeIn(200);
 	$('#chtext1').hide();
-	$('#chtext2').show();
+	$('#chtext2').fadeIn(200);
 	}
 
 
