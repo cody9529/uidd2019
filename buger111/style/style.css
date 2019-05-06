@@ -414,8 +414,7 @@ body {
   top: 0;
   width: 65%;
   height: 40%;
-  left: 50%;
-  transform: translateX(-65%);
+  left: 0%;
   -ms-flex-line-pack: center;
       align-content: center;
   z-index: 1;
@@ -425,10 +424,9 @@ body {
   display: none;
   top: 0;
   width: 78%;
-  height: 40%;
-  left: 50%;
+  height: 45%;
+  left: 0%;
   border-radius: 20px;
-  transform: translateX(-55%);
   -ms-flex-line-pack: center;
       align-content: center;
   z-index: 0;
