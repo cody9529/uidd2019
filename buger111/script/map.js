@@ -148,6 +148,7 @@ function myFunction1(){
 	   $('#step2_btn').addClass('red');
     	   $('#step1_btn').removeClass('red');
            html2canvas(document.querySelector("#mapbox")).then(canvas => {
+		document.body.appendChild(canvas);
     		var imgurl = canvas.toDataURL("image/png", 1);
 		document.getElementById("#mapboximg").innerHTML= imgurl;
 	   });
