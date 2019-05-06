@@ -154,6 +154,7 @@ function myFunction1(){
 		}
            });
 	   $('#mapboximg').show();
+           infowindow2.close(map);
     };
 function myFunction2(){	   
 	   document.getElementById('storeinfo1').innerHTML = '黑膠漢堡林森店' ;
