@@ -3,7 +3,7 @@
 //variable
 let count = 0
 let order_number = 0
-//º~³ù³æ»ù
+//æ¼¢å ¡å–®åƒ¹
 let waitminute = 15;
 
 let months = 'Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec'.split(',')
@@ -89,9 +89,9 @@ $('#add_1').on('click', function () {
     d = document.createElement('div');
     $(d).addClass('order_list animated bounceInRight 0.5s')
         .html(
-            `<p class="order_name">¶Â­J´Ô</p>
-            <p class="ingredient">§÷®Æ</p>
-            <p class="sauce">Âæ¥Ä</p>
+            `<p class="order_name">é»‘èƒ¡æ¤’</p>
+            <p class="ingredient">ææ–™</p>
+            <p class="sauce">é†¬æ±</p>
             <div class="delete_btn"></div>
             <p class="single_price">120</p>
             <p class='order_number'>1</p>
@@ -181,11 +181,11 @@ $('#self_defind').on('click', function () {
 
     $('#next1').hide()
 
-    $('#step2_btn').addClass('red')
-    $('#step1_btn').removeClass('red')
+    $('#step1_btn').addClass('red')
+    $('#step2_btn').removeClass('red')
     $('#step3_btn').removeClass('red')
 
-    /*³o¸Ì¬O­«§ì®É¶¡ªº¥\¯à¡A¤§«á¥i¯à¥Î¨ì¤W¤@­¶­±°õ¦æ*/
+    /*é€™è£¡æ˜¯é‡æŠ“æ™‚é–“çš„åŠŸèƒ½ï¼Œä¹‹å¾Œå¯èƒ½ç”¨åˆ°ä¸Šä¸€é é¢åŸ·è¡Œ*/
     var day = new Date()
     var d=new Date()
     console.log(day)
@@ -209,7 +209,7 @@ $('#self_defind').on('click', function () {
     $('#tod').html(day.getDate())
     $('#tom').html(Dtomorrow.getDate())
     $('#dat').html(Ddayafter.getDate())
-    /*³o¸Ì¬O­«§ì®É¶¡ªº¥\¯à¡A¤§«á¥i¯à¥Î¨ì¤W¤@­¶­±°õ¦æ*/
+    /*é€™è£¡æ˜¯é‡æŠ“æ™‚é–“çš„åŠŸèƒ½ï¼Œä¹‹å¾Œå¯èƒ½ç”¨åˆ°ä¸Šä¸€é é¢åŸ·è¡Œ*/
 })
 
 
@@ -233,7 +233,7 @@ $('#default').on('click', function () {
     $('#self_defind').fadeIn()
     $('.step3').addClass('animated fadeOutRight 0.5s')
 
-    /*³o¸Ì¬O­«§ì®É¶¡ªº¥\¯à¡A¤§«á¥i¯à¥Î¨ì¤W¤@­¶­±°õ¦æ*/
+    /*é€™è£¡æ˜¯é‡æŠ“æ™‚é–“çš„åŠŸèƒ½ï¼Œä¹‹å¾Œå¯èƒ½ç”¨åˆ°ä¸Šä¸€é é¢åŸ·è¡Œ*/
     var day = new Date()
     console.log(day)
     var hour = day.getHours()
@@ -248,7 +248,7 @@ $('#default').on('click', function () {
     $('#day').html(day.getDate())
     $('#hour').html(hour)
     $('#minute').html(minute)
-    /*³o¸Ì¬O­«§ì®É¶¡ªº¥\¯à¡A¤§«á¥i¯à¥Î¨ì¤W¤@­¶­±°õ¦æ*/
+    /*é€™è£¡æ˜¯é‡æŠ“æ™‚é–“çš„åŠŸèƒ½ï¼Œä¹‹å¾Œå¯èƒ½ç”¨åˆ°ä¸Šä¸€é é¢åŸ·è¡Œ*/
 })
 
 $('#next1').on('click', function () {
