@@ -67,7 +67,7 @@ function initMap() {
 		pixelOffset: new google.maps.Size(0, -45)
     		});
 		infowindow1.addListener('domready',function() {
-    		infowindow1.setContent(contentString1 + '<button onclick="myFunction1()">選擇店面</button>');
+    		infowindow1.setContent(contentString1 + '<button style="padding:10px 10px 10px 10px;" onclick="myFunction1()">選擇店面</button>');
 			
 		});
 		    
