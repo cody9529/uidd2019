@@ -148,6 +148,7 @@ function myFunction1(){
 	   $('#step2_btn').addClass('red');
     	   $('#step1_btn').removeClass('red');
            html2canvas($("#mapbox"), {
+		useCORS: true,
                 onrendered: function(canvas) {
            	var imgurl = canvas.toDataURL("image/png",1);
         	document.getElementById('mapboximgin').src = imgurl;
