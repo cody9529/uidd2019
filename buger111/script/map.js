@@ -149,7 +149,7 @@ function myFunction1(){
     	   $('#step1_btn').removeClass('red');
            html2canvas($("#mapbox"), {
                 onrendered: function(canvas) {
-           	var imgurl = canvas.toDataURL("image/png");
+           	var imgurl = canvas.toDataURL("image/png",1);
         	document.getElementById('mapboximgin').src = imgurl;
 		}
            });
