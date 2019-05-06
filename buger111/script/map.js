@@ -4,6 +4,8 @@ function myFunctionchoose() {
 	$('#choosebotton img').hide();
 	$('#choosebotton').hide();
 	$('#mapbox').show()
+	$('#chtext1').hide();
+	$('#chtext2').show();
 	}
 
 
