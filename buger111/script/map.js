@@ -155,10 +155,58 @@ function myFunction1(){
            });
 	   $('#mapboximg').show();
     };
-function myFunction2(){
-	   
+function myFunction2(){	   
 	   document.getElementById('storeinfo1').innerHTML = '黑膠漢堡林森店' ;
 	   document.getElementById('storeinfo2').innerHTML = '地址：台南市東區崇善路151號</br>09xx-xxx-xxx' ;
 	   $('#step2_btn').addClass('red');
     	   $('#step1_btn').removeClass('red');
+	
+           var directionsService = new google.maps.DirectionsService();
+           var directionsDisplay = new google.maps.DirectionsRenderer();
+           // 放置路線圖層
+	directionsDisplay.setMap(map);
+	
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(function(position) {
+                var pos = {
+                    lat: position.coords.latitude,
+                    lng: position.coords.longitude
+                };
+		// 路線相關設定
+		var request1 = {
+       	 	    origin:  { lat: position.coords.latitude, lng: position.coords.longitude },
+        	    destination: { lat: 22.997322, lng: 120.212076 },
+        	    travelMode: 'DRIVING'
+    		};
+		var request2 = {
+       	 	    origin:  { lat: position.coords.latitude, lng: position.coords.longitude },
+        	    destination: { lat: 22.988608, lng: 120.224096 },
+        	    travelMode: 'DRIVING'
+    		};
+	directionsService.route(request1, function (result, status) {
+        if (status == 'OK') {
+            // 回傳路線上每個步驟的細節
+            console.log(result.routes[0].legs[0].steps);
+            directionsDisplay.setDirections(result);
+	if (status == google.maps.DirectionsStatus.OK) {
+	
+        var route = result.routes[0];
+        // 取得距離
+        var Distance=route.legs[0].distance.text;
+        // 取得路徑大約時間
+        var Duration=route.legs[0].duration.text;
+        
+    }
+		
+        } else {
+            console.log(status);
+        }
+    });
+	 });
+	}else {
+            // Browser doesn't support Geolocation
+            alert("未允許或遭遇錯誤！");
+        }
+    };	    
+		    
     }
