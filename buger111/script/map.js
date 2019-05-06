@@ -148,6 +148,25 @@ function myFunction1(){
 	   document.getElementById('storeinfo2').innerHTML = '地址：台南市中西區成功路</br>09xx-xxx-xxx' ;
 	   $('#step2_btn').addClass('red');
     	   $('#step1_btn').removeClass('red');
+	directionsService.route(request1, function (result, status) {
+        if (status == 'OK') {
+            // 回傳路線上每個步驟的細節
+            console.log(result.routes[0].legs[0].steps);
+            directionsDisplay.setDirections(result);
+	if (status == google.maps.DirectionsStatus.OK) {
+	
+        var route = result.routes[0];
+        // 取得距離
+        var Distance=route.legs[0].distance.text;
+        // 取得路徑大約時間
+        var Duration=route.legs[0].duration.text;
+        
+    }
+		
+        } else {
+            console.log(status);
+        }
+    })
     };
 function myFunction2(){
 	   
@@ -155,4 +174,23 @@ function myFunction2(){
 	   document.getElementById('storeinfo2').innerHTML = '地址：台南市東區崇善路151號</br>09xx-xxx-xxx' ;
 	   $('#step2_btn').addClass('red');
     	   $('#step1_btn').removeClass('red');
+	directionsService.route(request1, function (result, status) {
+        if (status == 'OK') {
+            // 回傳路線上每個步驟的細節
+            console.log(result.routes[0].legs[0].steps);
+            directionsDisplay.setDirections(result);
+	if (status == google.maps.DirectionsStatus.OK) {
+	
+        var route = result.routes[0];
+        // 取得距離
+        var Distance=route.legs[0].distance.text;
+        // 取得路徑大約時間
+        var Duration=route.legs[0].duration.text;
+        
+    }
+		
+        } else {
+            console.log(status);
+        }
+    })
     };
