@@ -3,7 +3,7 @@
 function myFunctionchoose() {
 	$('#choosebotton img').hide();
 	$('#choosebotton').hide();
-	$('#mapbox').show()
+	$('#mapbox').fadeIn(300);
 	$('#chtext1').hide();
 	$('#chtext2').show();
 	}
