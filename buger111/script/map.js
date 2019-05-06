@@ -150,7 +150,8 @@ function myFunction1(){
            html2canvas($("#mapbox"), {
                 onrendered: function(canvas) {
            	var imgurl = canvas.toDataURL("image/png");
-        	document.getElementById('#mapboximg').src = imgurl;
+        	document.getElementById('mapboximg').src = imgurl;
+		}
            });
 	   $('#mapbox').hide();
 	   $('#mapboximg').show();
