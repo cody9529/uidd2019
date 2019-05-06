@@ -142,12 +142,17 @@ function initMap() {
         }
     }; //init_end
 
-function myFunction1(){
-	   
+function myFunction1(){ 
   	   document.getElementById('storeinfo1').innerHTML = '黑膠漢堡台南車站店</br>' ;
 	   document.getElementById('storeinfo2').innerHTML = '地址：台南市中西區成功路</br>09xx-xxx-xxx' ;
 	   $('#step2_btn').addClass('red');
-    	   $('#step1_btn').removeClass('red');  
+    	   $('#step1_btn').removeClass('red');
+           html2canvas(document.querySelector("#mapbox")).then(canvas => {
+    		var imgurl = canvas.toDataURL("image/png", 1);
+		document.getElementById("#mapboximg").innerHTML= imgurl;
+	   });
+	   $('#mapbox').hide();
+	   $('#mapboximg').show();
     };
 function myFunction2(){
 	   
