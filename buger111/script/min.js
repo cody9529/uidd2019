@@ -181,8 +181,8 @@ $('#self_defind').on('click', function () {
 
     $('#next1').hide()
 
-    $('#step1_btn').addClass('red')
-    $('#step2_btn').removeClass('red')
+    $('#step2_btn').addClass('red')
+    $('#step1_btn').removeClass('red')
     $('#step3_btn').removeClass('red')
 
     /*這裡是重抓時間的功能，之後可能用到上一頁面執行*/
