@@ -147,10 +147,12 @@ function myFunction1(){
 	   document.getElementById('storeinfo2').innerHTML = '地址：台南市中西區成功路</br>09xx-xxx-xxx' ;
 	   $('#step2_btn').addClass('red');
     	   $('#step1_btn').removeClass('red');
-           html2canvas($("#mapbox")[0]).then(function(canvas) {
+           html2canvas($("#mapbox"), {
+                onrendered: function(canvas) {
            	var $div = $("#mapboximg");
            	$div.empty();
            	$("<img />", { src: canvas.toDataURL("image/png") }).appendTo($div);
+                }
            });
 	   $('#mapbox').hide();
 	   $('#mapboximg').show();
