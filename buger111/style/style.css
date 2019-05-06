@@ -1,0 +1,640 @@
+﻿@charset "UTF-8";
+/*this is first page config*/
+body {
+  background-color: #333333;
+  -ms-overflow-style: none;
+  height: 100%;
+  width: calc(100vw + 18px);
+  overflow: auto;
+  font-family: url(../font/微软正黑体.ttf);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.main {
+  position: relative;
+  top: 20%;
+  width: 30%;
+  height: 53%;
+  left: 35%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  border: 2px solid;
+}
+
+.main #logo_img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 70%;
+  background-image: url("../img/logo.png");
+  background-size: cover;
+  border: 2px solid;
+}
+
+.main #button_start {
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  height: 30%;
+  border: 2px solid;
+}
+
+.main .btn-primary {
+  position: absolute;
+  width: 100%;
+}
+
+/*this is second page config*/
+.wrap {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin: 0%;
+  padding: 0%;
+  border: 3px solid red;
+}
+
+.wrap nav {
+  width: 88%;
+  height: 13%;
+  text-align: center;
+  float: right;
+  clear: both;
+  border: 2px solid;
+}
+
+.wrap .sidebar_region {
+  position: absolute;
+  width: 12%;
+  height: 100%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  line-height: 400px;
+  float: left;
+  border: 2px solid blue;
+  border: 2px solid;
+}
+
+.wrap .sidebar_region #logo {
+  position: absolute;
+  margin: 10%;
+  width: 80%;
+  height: 20%;
+  background-image: url("../img/LOGO (3).png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.wrap .sidebar_region .side_icon {
+  position: absolute;
+  display: block;
+  margin: 10%;
+  left: 10%;
+  /*
+            width:60%;
+            height:10%;
+            text-align: center;*/
+  padding-left: 25%;
+  /* padding-right: 10%;
+            line-height: 2px;*/
+  position: absolute;
+  width: 35%;
+  height: 0;
+  padding-bottom: 35%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 2px solid gray;
+}
+
+.wrap .order_region {
+  position: absolute;
+  width: 52%;
+  height: 81.3%;
+  top: 13%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-left: 12%;
+  margin-right: 36%;
+  border: 2px solid;
+}
+
+.wrap .shopping_region {
+  position: absolute;
+  top: 13%;
+  right: 0;
+  width: 36%;
+  height: 81.3%;
+  text-align: center;
+  border: 2px solid;
+}
+
+.wrap .mid_region {
+  width: 88%;
+  height: 87%;
+  position: absolute;
+  right: 0%;
+  bottom: 0%;
+  border: 3px solid red;
+}
+
+.shadow {
+  position: inherit;
+  width: 100%;
+  height: 100%;
+  background-color: #fcfafa;
+  opacity: 0.5;
+  z-index: 100;
+  display: none;
+}
+
+#menber {
+  background-image: url("../img/member.png");
+  margin: 5%;
+  top: 25%;
+  border-radius: 5px;
+}
+
+#menu {
+  background-image: url("../img/menu.png");
+  margin: 5%;
+  top: 37%;
+  border-radius: 5px;
+}
+
+#map {
+  background-image: url("../img/map.png");
+  margin: 5%;
+  top: 49%;
+  border-radius: 5px;
+}
+
+.hamburger {
+  position: absolute;
+  width: 35%;
+  height: 0;
+  padding-bottom: 35%;
+  background-color: blanchedalmond;
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+  border: 2px solid;
+}
+
+#burger1 {
+  top: 0%;
+  left: 10%;
+  background-image: url("../img/27b6fd380a9a43f742508a1d18bf67ee.jpg");
+}
+
+#burger2 {
+  top: 0%;
+  right: 10%;
+  background-image: url("../img/fe8a821d11269ba7e8ded9432331cd35.jpg");
+}
+
+#burger3 {
+  bottom: 0%;
+  left: 10%;
+  background-image: url("../img/fe8a821d11269ba7e8ded9432331cd35.jpg");
+}
+
+#burger4 {
+  bottom: 0%;
+  right: 10%;
+  background-image: url("../img/27b6fd380a9a43f742508a1d18bf67ee.jpg");
+}
+
+.rating {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 30%;
+  height: 20px;
+}
+
+.glyphicon-star:before {
+  color: gold;
+  font-size: 20px;
+  height: 100%;
+}
+
+.rating_text {
+  color: gold;
+  font-size: 20px;
+  height: 100%;
+  margin: 0%;
+  top: -15%;
+}
+
+.cal {
+  color: white;
+  position: absolute;
+  top: 3%;
+  right: 2%;
+  font-size: 16px;
+}
+
+.cal span {
+  font-size: 25px;
+}
+
+.container_pic {
+  position: absolute;
+  bottom: 0%;
+  background-color: white;
+  opacity: 0.8;
+  padding: 3px;
+  font-size: 20px;
+  text-align: center;
+  overflow: hidden;
+  line-height: 85%;
+}
+
+.container_pic .food_name {
+  font-size: 25px;
+}
+
+.container_pic .food_content {
+  font-size: 12px;
+}
+
+.container_pic .food_price {
+  font-size: 30px;
+  color: red;
+}
+
+.plus_btn {
+  position: absolute;
+  right: -10%;
+  top: 40%;
+  background-image: url("../img/add-circular-outlined-button.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20%;
+  height: 20%;
+}
+
+.shoping_cart {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  width: 75%;
+  height: 100%;
+  background-color: #c8cecf;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#cart_pic {
+  width: 100%;
+}
+
+.append_rigion {
+  position: absolute;
+  overflow: scroll;
+  width: 100%;
+  height: 60%;
+  top: 20%;
+  border: 2px solid;
+}
+
+.order_list {
+  position: relative;
+  width: 85%;
+  height: 85px;
+  background-color: azure;
+  margin: 13px;
+  border-radius: 10px;
+  -webkit-box-shadow: 5px #304753;
+          box-shadow: 5px #304753;
+}
+
+.order_name {
+  font-size: 20px;
+  position: absolute;
+  left: 10px;
+  top: 5px;
+}
+
+.ingredient {
+  font-size: 12px;
+  bottom: 19px;
+  position: absolute;
+  left: 10px;
+  margin: 0%;
+}
+
+.sauce {
+  font-size: 12px;
+  bottom: 0%;
+  position: absolute;
+  left: 10px;
+  bottom: 2px;
+  margin: 0%;
+}
+
+.single_price {
+  position: absolute;
+  font-size: 20px;
+  top: 5px;
+  right: 5%;
+}
+
+.delete_btn {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  bottom: 15px;
+  right: -10%;
+  border: 2px solid;
+}
+
+.add_btn {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 10px;
+  right: 20%;
+  border: 2px solid;
+}
+
+.minus_btn {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 10px;
+  right: 40%;
+  border: 2px solid;
+}
+
+.order_number {
+  position: absolute;
+  font-size: 20px;
+  top: 5px;
+  right: 32%;
+}
+
+.total_pay {
+  position: absolute;
+  font-size: 45px;
+  bottom: 10%;
+  letter-spacing: 5px;
+  left: 20%;
+}
+
+/*modal control*/
+.modal-body {
+  width: 60%;
+  height: 40%;
+}
+
+/*modal control*/
+/*this is third page config*/
+.red {
+  background-color: red;
+}
+
+.red hover {
+  background-color: red;
+}
+
+.step1 {
+  position: absolute;
+  width: 25%;
+  height: 100%;
+}
+
+.wrap .mainbox .step1 #choosebotton {
+  position: relative;
+  top: 0;
+  width: 65%;
+  height: 40%;
+  left: 50%;
+  transform: translateX(-65%);
+  -ms-flex-line-pack: center;
+      align-content: center;
+  z-index: 1;
+}
+
+.wrap .mainbox .step1 #mapbox {
+  display: none;
+  top: 0;
+  width: 78%;
+  height: 40%;
+  left: 50%;
+  border-radius: 20px;
+  transform: translateX(-55%);
+  -ms-flex-line-pack: center;
+      align-content: center;
+  z-index: 0;
+}
+
+.wrap .mainbox .step1 #storeinfo1 {
+  top: 70%;
+  height: 7%;
+  padding: 15px 0px 0px 8%;
+  text-align: left;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: Microsoft JhengHei;
+}
+
+.wrap .mainbox .step1 #storeinfo2 {
+  top: 80%;
+  padding: 0px 0px 0px 8%;
+  text-align: left;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Microsoft JhengHei;
+}
+
+.step2 {
+  position: absolute;
+  left: 25%;
+  height: 100%;
+  width: 70%;
+}
+
+.step3 {
+  position: absolute;
+  left: 50%;
+  height: 100%;
+  width: 33%;
+  display: none;
+}
+
+.opacity {
+  opacity: 0.4;
+}
+
+.button_step {
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 10px;
+  height: 45px;
+}
+
+#default {
+  position: absolute;
+  width: 18%;
+  top: 18%;
+  left: 0;
+}
+
+#self_defind {
+  position: absolute;
+  width: 18%;
+  top: 18%;
+  left: 20%;
+}
+
+.payBlock {
+  position: absolute;
+  width: 100%;
+  height: 48%;
+  top: 20%;
+}
+
+#line {
+  position: absolute;
+  width: 48%;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+}
+
+#wallet {
+  position: absolute;
+  width: 48%;
+  left: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+
+#card {
+  position: absolute;
+  width: 48%;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+}
+
+#yoyo {
+  position: absolute;
+  width: 48%;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+
+#confirm_red {
+  position: absolute;
+  bottom: 23%;
+  background-color: red;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 10px;
+  height: 45px;
+  left: 0;
+  display: none;
+}
+
+.time_block {
+  position: absolute;
+  width: 18%;
+  height: 50%;
+  top: 28%;
+  padding: 5px;
+  background-color: black;
+  overflow: hidden;
+  font-size: 30px;
+  text-overflow: clip;
+  font-weight: bold;
+  line-height: 45px;
+  color: white;
+}
+
+.time_block #week {
+  color: white;
+  font-size: 20px;
+}
+
+.time_block #week_ {
+  color: white;
+  font-size: 20px;
+}
+
+#cost {
+  display: none;
+  left: 20%;
+}
+
+.next {
+  background-color: red;
+  position: absolute;
+  width: 70%;
+  left: 15%;
+  bottom: 15%;
+}
+
+.time_table {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  top: 28%;
+  left: 38%;
+  background-color: #e6e6e6;
+  padding: 20px;
+  display: none;
+  background-image: url("../img/timeboard.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.date_selecter {
+  position: absolute;
+  top: 13%;
+  left: 40%;
+  width: 20%;
+  height: 25%;
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hour_selecter {
+  position: absolute;
+  top: 48%;
+  left: 45%;
+  width: 16%;
+  height: 20%;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+}
+
+.minute_selecter {
+  position: absolute;
+  top: 72%;
+  left: 45%;
+  width: 10%;
+  height: 12%;
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+}
+
+.block_selected {
+  background-color: #ffffff;
+}
+
+/*this is forth page config*/
+/*# sourceMappingURL=style.css.map */

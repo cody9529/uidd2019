@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>unmmand retaurant</title>
+
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"
+        integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+
+    <!--為了MODEL加的，出問題優先刪除，提到上面讓下面覆寫-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <!---->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+</head>
+
+<body style="height:100vh;width:100vw;">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <div class="wrap">
+        <nav></nav>
+
+
+        <div class="sidebar_region">
+            <div id="logo"></div>
+            <div class="side_icon" id='menber'></div>
+
+            <div class="side_icon" id='menu'></div>
+
+            <div class="side_icon" id='map'></div>
+        </div>
+
+        <div class="mid_region">
+            <div class="step1">
+                <button type="button" class="btn btn-secondary btn-lg button_step" id='step1_btn'>STEP1</button>
+                <br><br>
+                <button type="button" class="btn btn-secondary btn-lg button_step opacity">重新選擇取餐門市</button>
+		<br><br>
+		<div id="choosebotton"><img src="./img/工作區域 40.png" onclick="myFunctionchoose()" style="cursor:pointer"></div>
+		<div id="mapbox"></div>
+            </div>
+            <div class="step2">
+                <button type="button" class="btn btn-secondary btn-lg button_step red" id='step2_btn'>STEP2</button>
+                <br><br>
+                <b style="font-size:30px;color: azure;">選擇取餐時間</b>
+                <button type="button" class="btn btn-secondary btn-lg button_step" id='default'>系統預定</button>
+                <button type="button" class="btn btn-secondary btn-lg button_step opacity"
+                    id='self_defind'>自行設定</button>
+                <div class="time_block" id='defa'>
+                    <p id="week">TUE</p>
+                    <span id="month">MAY</span><span>,</span>
+                    <span id="day">15</span>
+                    <br>
+                    <span id="hour">11</span><span>:</span>
+                    <span id="minute">50</span>
+                    <button type="button" class="btn btn-secondary btn-lg button_step next" id='next1'>NEXT</button>
+                </div>
+
+                <div class="time_table">
+                    <p style='position:absolute;font-weight: 1000;font-size: 15px'>日期</p>
+                    <p style='position:absolute;font-weight: 1000;font-size: 15px;top:47%'>時間</p>
+                    <p style='position:absolute;font-weight: 1000;font-size: 15px;top:57%;left:12%'>時</p>
+                    <p style='position:absolute;font-weight: 1000;font-size: 15px;top:75%;left:12%'>分</p>
+                    <div class="date_selecter block_selected" id='tod' style="left:20%">15</div>
+                    <div class="date_selecter" id='tom'>16</div>
+                    <div class="date_selecter"id='dat' style="left:60%">17</div>
+
+                    <div class="hour_selecter" style='left:28%'id='hour11'>11</div>
+                    <div class="hour_selecter block_selected" id='hour12'>12</div>
+                    <div class="hour_selecter "style="left:62%" id='hour13'>13</div>
+
+                    <div class="minute_selecter "style="left:20%" id='minute00'>00</div>
+                    <div class="minute_selecter "style="left:33%" id='minute10'>10</div>
+                    <div class="minute_selecter block_selected"style="left:46%" id='minute20'>20</div>
+                    <div class="minute_selecter "style="left:59%" id='minute30'>30</div>
+                    <div class="minute_selecter "style="left:72%" id='minute40'>40</div>
+                    <div class="minute_selecter "style="left:85%" id='minute50'>50</div>              
+                </div>
+                <div class="time_block" id='cost'>
+                    <p id="week_">TUE</p>
+                    <span id="month_">MAY</span><span>,</span>
+                    <span id="day_">21</span>
+                    <br>
+                    <span id="hour_">11</span><span>:</span>
+                    <span id="minute_">50</span>
+                    <button type="button" class="btn btn-secondary btn-lg button_step next" id='next2'>NEXT</button>
+                </div>
+
+             
+            </div>
+            <div class="step3">
+                <button type="button" class="btn btn-secondary btn-lg button_step" id='step3_btn'>STEP3</button>
+                <br><br>
+                <b style="font-size:30px;color: azure;">選擇付費方式</b>
+                <div class="payBlock">
+                    <img class='opacity' src="./img/linepay.png" id='line'>
+                    <img class='opacity' src="./img/mywallet.png" id="wallet">
+                    <img class='opacity' src="./img/card.png" id="card">
+                    <img class='opacity' src="./img/yoyo.png" id="yoyo">
+                </div>
+                <button type="button" class="btn btn-primary btn-lg btn-block" id='confirm_red'>CONFIRM AND PAY</button>
+
+
+            </div>
+        </div>
+
+
+    </div>
+    <script src="./script/map.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3-fExgqiJV_3JHHWNlxHDzT_dS-dtl24&callback=initMap">
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="./script/min.js"></script>
+
+    <!--為了用modal加的，出問題優先刪除-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <!--------------------------------->
+
+</body>
+
+</html>
