@@ -448,7 +448,7 @@ body {
 
 #storeinfo1 {
   position: relative;
-  top: -45%;
+  top: 0%;
   padding: 15px 0px 5px 0px;
   text-align: left;
   font-size: 25px;
@@ -459,7 +459,7 @@ body {
 
 #storeinfo2 {
   position: relative;
-  top: -45%;
+  top: 0%;
   padding: 0px 0px 0px 0px;
   text-align: left;
   font-size: 16px;
