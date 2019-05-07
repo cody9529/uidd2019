@@ -1,6 +1,8 @@
 
 var infowindow1
 var infowindow2
+var marker1
+var marker2
 
 function myFunctionchoose() {
 	$('#choosebotton img').hide();
@@ -52,12 +54,12 @@ function initMap() {
 		    zIndex:999,
 		    label: '我'
                 });
-		var marker1 = new google.maps.Marker({
+		marker1 = new google.maps.Marker({
                     position: { lat: 22.997322, lng: 120.212076 },
                     map: map,
 		    zIndex:999
                 });
-		var marker2 = new google.maps.Marker({
+		marker2 = new google.maps.Marker({
                     position: { lat: 22.988608, lng: 120.224096 },
                     map: map,
 		    zIndex:999
@@ -158,6 +160,7 @@ function myFunction1(){
            });
 	   $('#mapboximg').show();
 	   infowindow2.close();
+	   marker1.setMap(null);
     };
 function myFunction2(){	   
 	   document.getElementById('storeinfo1').innerHTML = '黑膠漢堡林森店' ;
