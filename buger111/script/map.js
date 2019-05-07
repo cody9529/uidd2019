@@ -225,7 +225,7 @@ function myFunction1(){
 		   })
 	   },300
            );
-	
+           document.getElementById("mapbox").style.opacity="0";
 	   $('#mapboximg').show();
 	   infowindow1.close();
 	   infowindow2.close();
