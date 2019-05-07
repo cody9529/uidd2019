@@ -71,7 +71,7 @@ function initMap() {
 		pixelOffset: new google.maps.Size(0, -45)
     		});
 		infowindow1.addListener('domready',function() {
-    		infowindow1.setContent(contentString1 + '<button style="margin:3px 0px 10px 0px;" onclick="this.myFunction1()">選擇店面</button>');
+    		infowindow1.setContent(contentString1 + '<button style="margin:3px 0px 10px 0px;" onclick="myFunction1()">選擇店面</button>');
 			
 		});
 		    
@@ -82,7 +82,7 @@ function initMap() {
 		pixelOffset: new google.maps.Size(0, -45)
     		});
 		infowindow2.addListener('domready',function() {
-    		infowindow2.setContent(contentString2 + '<button style="margin:3px 0px 10px 0px;" onclick="this.myFunction2()">選擇店面</button>');
+    		infowindow2.setContent(contentString2 + '<button style="margin:3px 0px 10px 0px;" onclick="myFunction2()">選擇店面</button>');
 		});    
 		   
   		infowindow1.open(map);
