@@ -230,20 +230,75 @@ function myFunction2(){
 	   document.getElementById('storeinfo2').innerHTML = '地址：台南市東區崇善路151號</br>09xx-xxx-xxx' ;
 	   $('#step2_btn').addClass('red');
     	   $('#step1_btn').removeClass('red');
-	   html2canvas($("#mapbox"), {
-		useCORS: true,
-                onrendered: function(canvas) {
-           	var imgurl = canvas.toDataURL("image/png",1);
-        	document.getElementById('mapboximgin').src = imgurl;
-		}
+	   directionsService = new google.maps.DirectionsService();
+    	   directionsDisplay = new google.maps.DirectionsRenderer();
+	   latlng = { lat: 25.046891, lng: 121.516602 }; // 給一個初始位置
+	   map = new google.maps.Map(document.getElementById('mapbox'), {
+           	zoom: 14, //放大的倍率
+            	center: latlng //初始化的地圖中心位置
            });
+	   // 放置路線圖層
+	directionsDisplay.setMap(map);
+	
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(function(position) {
+                var pos = {
+                    lat: position.coords.latitude,
+                    lng: position.coords.longitude
+                };
+		// 路線相關設定
+		var request1 = {
+       	 	    origin:  { lat: position.coords.latitude, lng: position.coords.longitude },
+        	    destination: { lat: 22.997322, lng: 120.212076 },
+        	    travelMode: 'DRIVING'
+    		};
+		var request2 = {
+       	 	    origin:  { lat: position.coords.latitude, lng: position.coords.longitude },
+        	    destination: { lat: 22.988608, lng: 120.224096 },
+        	    travelMode: 'DRIVING'
+    		};
+	  directionsService.route(request1, function (result, status) {
+		if (status == 'OK') {
+		    // 回傳路線上每個步驟的細節
+		    console.log(result.routes[0].legs[0].steps);
+		    directionsDisplay.setDirections(result);
+		if (status == google.maps.DirectionsStatus.OK) {
+
+		var route = result.routes[0];
+		// 取得距離
+		var Distance=route.legs[0].distance.text;
+		// 取得路徑大約時間
+		var Duration=route.legs[0].duration.text;
+
+	    }
+
+		} else {
+		    console.log(status);
+		}
+	    });
+           });
+		}else {
+		    // Browser doesn't support Geolocation
+		    alert("未允許或遭遇錯誤！");
+		};
+           setTimeout(function(){
+		   html2canvas($("#mapbox"), {
+			useCORS: true,
+			onrendered: function(canvas) {
+			var imgurl = canvas.toDataURL("image/png",1);
+			document.getElementById('mapboximgin').src = imgurl;
+			}
+		   })
+	   },300
+           );
+	
 	   $('#mapboximg').show();
 	   infowindow1.close();
 	   infowindow2.close();
 	   marker1.setMap(null);
 	   marker2.setMap(null);
-		    
-    }
+    };
+
 
 
 $('#chtext2').on('click', function () {
