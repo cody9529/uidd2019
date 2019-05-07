@@ -305,6 +305,7 @@ $('#line').on('click', function () {
     $('#step3_btn').addClass('red')
     $('#step1_btn').removeClass('red')
     $('#step2_btn').removeClass('red')
+    $('#confirm_red').fadeIn(200)
 })
 
 $('#wallet').on('click', function () {
@@ -316,6 +317,7 @@ $('#wallet').on('click', function () {
     $('#step3_btn').addClass('red')
     $('#step1_btn').removeClass('red')
     $('#step2_btn').removeClass('red')
+    $('#confirm_red').fadeIn(200)
 })
 
 $('#card').on('click', function () {
@@ -327,6 +329,7 @@ $('#card').on('click', function () {
     $('#step3_btn').addClass('red')
     $('#step1_btn').removeClass('red')
     $('#step2_btn').removeClass('red')
+    $('#confirm_red').fadeIn(200)
 })
 
 $('#yoyo').on('click', function () {
@@ -338,6 +341,7 @@ $('#yoyo').on('click', function () {
     $('#step3_btn').addClass('red')
     $('#step1_btn').removeClass('red')
     $('#step2_btn').removeClass('red')
+    $('#confirm_red').fadeIn(200)
 })
 
 /*select time*/
