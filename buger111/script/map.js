@@ -158,7 +158,7 @@ function myFunction1(){
 	   directionsService = new google.maps.DirectionsService();
     	   directionsDisplay = new google.maps.DirectionsRenderer();
 	   latlng = { lat: 25.046891, lng: 121.516602 }; // 給一個初始位置
-	   map = new google.maps.Map(document.getElementById('mapbox'), {
+	   map = new google.maps.Map(document.getElementById('mapbox1'), {
            	zoom: 14, //放大的倍率
             	center: latlng //初始化的地圖中心位置
            });
@@ -216,6 +216,7 @@ function myFunction1(){
 		   })
 	   },300
            );
+	   $('#mapbox1').show();
 	   $('#mapboximg').show();
 	   infowindow1.close();
 	   infowindow2.close();
@@ -230,7 +231,7 @@ function myFunction2(){
 	   directionsService = new google.maps.DirectionsService();
     	   directionsDisplay = new google.maps.DirectionsRenderer();
 	   latlng = { lat: 25.046891, lng: 121.516602 }; // 給一個初始位置
-	   map = new google.maps.Map(document.getElementById('mapbox'), {
+	   map = new google.maps.Map(document.getElementById('mapbox1'), {
            	zoom: 14, //放大的倍率
             	center: latlng //初始化的地圖中心位置
            });
@@ -289,6 +290,7 @@ function myFunction2(){
 	   },300
            );
 	
+	   $('#mapbox1').show();
 	   $('#mapboximg').show();
 	   infowindow1.close();
 	   infowindow2.close();
