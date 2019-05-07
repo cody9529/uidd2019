@@ -432,18 +432,6 @@ body {
   z-index: 0;
 }
 
-#mapbox1 {
-  display: none;
-  position: relative;
-  top: -45%;
-  width: 78%;
-  height: 45%;
-  left: 0%;
-  border-radius: 20px;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  z-index: 2;
-}
 
 #mapboximg {
   display: none;
