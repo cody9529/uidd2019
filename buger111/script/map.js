@@ -207,6 +207,15 @@ function myFunction1(){
 		    alert("未允許或遭遇錯誤！");
 		};
            setTimeout(function(){
+		   var w = $("#mapboximg").width();  
+			var h = $("#mapboximg").height();//要將 canvas 的寬高設置成容器寬高的 2 倍  
+			var canvas = document.createElement("canvas");  
+			    canvas.width = w * 2;  
+			    canvas.height = h * 2;  
+			    canvas.style.width = w + "px";  
+			    canvas.style.height = h + "px";  
+			var context = canvas.getContext("2d");//然後將畫布縮放，將圖像放大兩倍畫到畫布上  
+			    context.scale(2,2);
 		   html2canvas($("#mapbox"), {
 			useCORS: true,
 			onrendered: function(canvas) {
