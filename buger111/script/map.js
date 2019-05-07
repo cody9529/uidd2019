@@ -208,13 +208,16 @@ function myFunction1(){
 		    // Browser doesn't support Geolocation
 		    alert("未允許或遭遇錯誤！");
 		};
-           html2canvas($("#mapbox"), {
-		useCORS: true,
-                onrendered: function(canvas) {
-           	var imgurl = canvas.toDataURL("image/png",1);
-        	document.getElementById('mapboximgin').src = imgurl;
-		}
-           });   
+           setTimeout(function(){
+		   html2canvas($("#mapbox"), {
+			useCORS: true,
+			onrendered: function(canvas) {
+			var imgurl = canvas.toDataURL("image/png",1);
+			document.getElementById('mapboximgin').src = imgurl;
+			}
+		   })
+	   },300
+           );
 	
 	   $('#mapboximg').show();
 	   infowindow1.close();
