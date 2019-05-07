@@ -71,7 +71,7 @@ function initMap() {
 		pixelOffset: new google.maps.Size(0, -45)
     		});
 		infowindow1.addListener('domready',function() {
-    		infowindow1.setContent(contentString1 + '<button style="margin:3px 0px 10px 0px;" onclick="this.myFunction1">選擇店面</button>');
+    		infowindow1.setContent(contentString1 + '<button style="margin:3px 0px 10px 0px;" onclick="this.myFunction1()">選擇店面</button>');
 			
 		});
 		    
@@ -82,7 +82,7 @@ function initMap() {
 		pixelOffset: new google.maps.Size(0, -45)
     		});
 		infowindow2.addListener('domready',function() {
-    		infowindow2.setContent(contentString2 + '<button style="margin:3px 0px 10px 0px;" onclick="myFunction2()">選擇店面</button>');
+    		infowindow2.setContent(contentString2 + '<button style="margin:3px 0px 10px 0px;" onclick="this.myFunction2()">選擇店面</button>');
 		});    
 		   
   		infowindow1.open(map);
@@ -140,7 +140,7 @@ function initMap() {
             });
 		    
 		    
-    this.myFunction1 = function(){ 
+    function myFunction1(){ 
   	   document.getElementById('storeinfo1').innerHTML = '黑膠漢堡台南車站店</br>' ;
 	   document.getElementById('storeinfo2').innerHTML = '地址：台南市中西區成功路</br>09xx-xxx-xxx' ;
 	   $('#step2_btn').addClass('red');
