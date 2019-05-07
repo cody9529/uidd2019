@@ -238,26 +238,7 @@ function myFunction2(){
             	center: latlng //初始化的地圖中心位置
            });
 	   // 放置路線圖層
-	directionsDisplay.setMap(map);
-	
-        if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(function(position) {
-                var pos = {
-                    lat: position.coords.latitude,
-                    lng: position.coords.longitude
-                };
-		// 路線相關設定
-		var request1 = {
-       	 	    origin:  { lat: position.coords.latitude, lng: position.coords.longitude },
-        	    destination: { lat: 22.997322, lng: 120.212076 },
-        	    travelMode: 'DRIVING'
-    		};
-		var request2 = {
-       	 	    origin:  { lat: position.coords.latitude, lng: position.coords.longitude },
-        	    destination: { lat: 22.988608, lng: 120.224096 },
-        	    travelMode: 'DRIVING'
-    		};
-	  directionsService.route(request1, function (result, status) {
+	directionsService.route(request2, function (result, status) {
 		if (status == 'OK') {
 		    // 回傳路線上每個步驟的細節
 		    console.log(result.routes[0].legs[0].steps);
@@ -276,7 +257,6 @@ function myFunction2(){
 		    console.log(status);
 		}
 	    });
-           });
 		}else {
 		    // Browser doesn't support Geolocation
 		    alert("未允許或遭遇錯誤！");
