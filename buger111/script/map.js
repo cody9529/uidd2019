@@ -286,7 +286,7 @@ function myFunction2(){
 			document.getElementById('mapboximgin').src = imgurl;
 			}
 		   })
-	   }200
+	   },200
            );
 	
 	   $('#mapboximg').show();
