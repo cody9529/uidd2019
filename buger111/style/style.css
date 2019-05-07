@@ -446,7 +446,8 @@ body {
 }
 
 #storeinfo1 {
-  top: 70%;
+  position: relative;
+  top: -45%;
   height: 7%;
   padding: 15px 0px 0px 0px;
   text-align: left;
@@ -457,7 +458,8 @@ body {
 }
 
 #storeinfo2 {
-  top: 80%;
+  position: relative;
+  top: -45%;
   padding: 0px 0px 0px 0px;
   text-align: left;
   font-size: 16px;
