@@ -181,3 +181,13 @@ function myFunction2(){
 	   marker1.setMap(null);
 		    
     }
+
+$('#chtext2').on('click', function () {
+    $('#step1_btn').addClass('red')
+    $('#step2_btn').removeClass('red')
+    $('#step3_btn').removeClass('red')
+    document.getElementById('storeinfo1').innerHTML = '' ;
+    document.getElementById('storeinfo2').innerHTML = '' ;
+    initMap();
+    $('#mapboximg').hide();	
+})
