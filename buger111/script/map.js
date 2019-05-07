@@ -307,5 +307,6 @@ $('#chtext2').on('click', function () {
     document.getElementById('storeinfo1').innerHTML = '' ;
     document.getElementById('storeinfo2').innerHTML = '' ;
     initMap();
-    $('#mapboximg').hide();	
+    $('#mapboximg').hide();
+    document.getElementById('mapboximgin').src = "";
 })
