@@ -255,6 +255,7 @@ function myFunction2(){
 		    console.log(status);
 		}
 	    });
+		});
 		}else {
 		    // Browser doesn't support Geolocation
 		    alert("未允許或遭遇錯誤！");
