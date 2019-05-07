@@ -161,6 +161,7 @@ function myFunction1(){
 		}
            });
 	   $('#mapboximg').show();
+	   $('#mapbox').hide();
 	   infowindow2.close();
 	   marker1.setMap(null);
     };
