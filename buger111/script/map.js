@@ -160,6 +160,7 @@ function myFunction1(){
            });
 	   $('#mapboximg').show();
 	   $('#mapbox').hide();
+	   infowindow1.close();
 	   infowindow2.close();
 	   marker1.setMap(null);
     };
@@ -168,5 +169,17 @@ function myFunction2(){
 	   document.getElementById('storeinfo2').innerHTML = '地址：台南市東區崇善路151號</br>09xx-xxx-xxx' ;
 	   $('#step2_btn').addClass('red');
     	   $('#step1_btn').removeClass('red');
+	   html2canvas($("#mapbox"), {
+		useCORS: true,
+                onrendered: function(canvas) {
+           	var imgurl = canvas.toDataURL("image/png",1);
+        	document.getElementById('mapboximgin').src = imgurl;
+		}
+           });
+	   $('#mapboximg').show();
+	   $('#mapbox').hide();
+	   infowindow1.close();
+	   infowindow2.close();
+	   marker1.setMap(null);
 		    
     }
