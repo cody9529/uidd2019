@@ -159,7 +159,6 @@ function myFunction1(){
 		}
            });
 	   $('#mapboximg').show();
-	   $('#mapbox').hide();
 	   infowindow1.close();
 	   infowindow2.close();
 	   marker1.setMap(null);
@@ -177,7 +176,6 @@ function myFunction2(){
 		}
            });
 	   $('#mapboximg').show();
-	   $('#mapbox').hide();
 	   infowindow1.close();
 	   infowindow2.close();
 	   marker1.setMap(null);
