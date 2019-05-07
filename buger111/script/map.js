@@ -156,13 +156,7 @@ function myFunction1(){
 	   document.getElementById('storeinfo2').innerHTML = '地址：台南市中西區成功路</br>09xx-xxx-xxx' ;
 	   $('#step2_btn').addClass('red');
     	   $('#step1_btn').removeClass('red');
-           html2canvas($("#mapbox"), {
-		useCORS: true,
-                onrendered: function(canvas) {
-           	var imgurl = canvas.toDataURL("image/png",1);
-        	document.getElementById('mapboximgin').src = imgurl;
-		}
-           });
+	
 	   directionsService = new google.maps.DirectionsService();
     	   directionsDisplay = new google.maps.DirectionsRenderer();
 	   latlng = { lat: 25.046891, lng: 121.516602 }; // 給一個初始位置
@@ -214,7 +208,14 @@ function myFunction1(){
 		    // Browser doesn't support Geolocation
 		    alert("未允許或遭遇錯誤！");
 		};
-	   
+           html2canvas($("#mapbox"), {
+		useCORS: true,
+                onrendered: function(canvas) {
+           	var imgurl = canvas.toDataURL("image/png",1);
+        	document.getElementById('mapboximgin').src = imgurl;
+		}
+           });   
+	
 	   $('#mapboximg').show();
 	   infowindow1.close();
 	   infowindow2.close();
