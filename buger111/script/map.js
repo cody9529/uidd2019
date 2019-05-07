@@ -162,6 +162,7 @@ function myFunction1(){
 	   infowindow1.close();
 	   infowindow2.close();
 	   marker1.setMap(null);
+	   marker2.setMap(null);
     };
 function myFunction2(){	   
 	   document.getElementById('storeinfo1').innerHTML = '黑膠漢堡林森店' ;
@@ -179,6 +180,7 @@ function myFunction2(){
 	   infowindow1.close();
 	   infowindow2.close();
 	   marker1.setMap(null);
+	   marker2.setMap(null);
 		    
     }
 
