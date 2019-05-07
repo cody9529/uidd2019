@@ -207,7 +207,7 @@ function myFunction1(){
 		    alert("未允許或遭遇錯誤！");
 		};
            setTimeout(function(){
-		   html2canvas($("#mapbox"), {
+		   html2canvas($("#mapbox1"), {
 			useCORS: true,
 			onrendered: function(canvas) {
 			var imgurl = canvas.toDataURL("image/png",1);
@@ -280,7 +280,7 @@ function myFunction2(){
 		    alert("未允許或遭遇錯誤！");
 		};
            setTimeout(function(){
-		   html2canvas($("#mapbox"), {
+		   html2canvas($("#mapbox1"), {
 			useCORS: true,
 			onrendered: function(canvas) {
 			var imgurl = canvas.toDataURL("image/png",1);
