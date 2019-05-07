@@ -71,7 +71,7 @@ function initMap() {
 		pixelOffset: new google.maps.Size(0, -45)
     		});
 		infowindow1.addListener('domready',function() {
-    		infowindow1.setContent(contentString1 + '<button style="margin:3px 0px 10px 0px;" onclick="myFunction1()">選擇店面</button>');
+    		infowindow1.setContent(contentString1 + '<button style="margin:3px 0px 10px 0px;" onclick="(initMap()).myFunction1()">選擇店面</button>');
 			
 		});
 		    
@@ -138,14 +138,53 @@ function initMap() {
     });
     
             });
-		    	    
+		
+		    
+    this.myFunction1 = function(){ 
+  	   document.getElementById('storeinfo1').innerHTML = '黑膠漢堡台南車站店</br>' ;
+	   document.getElementById('storeinfo2').innerHTML = '地址：台南市中西區成功路</br>09xx-xxx-xxx' ;
+	   $('#step2_btn').addClass('red');
+    	   $('#step1_btn').removeClass('red');
+           html2canvas($("#mapbox"), {
+		useCORS: true,
+                onrendered: function(canvas) {
+           	var imgurl = canvas.toDataURL("image/png",1);
+        	document.getElementById('mapboximgin').src = imgurl;
+		}
+           });
+	   $('#mapboximg').show();
+	   infowindow1.close();
+	   infowindow2.close();
+	   marker1.setMap(null);
+	   marker2.setMap(null);
+    };
+    function myFunction2(){	   
+	   document.getElementById('storeinfo1').innerHTML = '黑膠漢堡林森店' ;
+	   document.getElementById('storeinfo2').innerHTML = '地址：台南市東區崇善路151號</br>09xx-xxx-xxx' ;
+	   $('#step2_btn').addClass('red');
+    	   $('#step1_btn').removeClass('red');
+	   html2canvas($("#mapbox"), {
+		useCORS: true,
+                onrendered: function(canvas) {
+           	var imgurl = canvas.toDataURL("image/png",1);
+        	document.getElementById('mapboximgin').src = imgurl;
+		}
+           });
+	   $('#mapboximg').show();
+	   infowindow1.close();
+	   infowindow2.close();
+	   marker1.setMap(null);
+	   marker2.setMap(null);
+		    
+    }
+		    
         });
 	}else {
             // Browser doesn't support Geolocation
             alert("未允許或遭遇錯誤！");
         }
     }; //init_end
-
+/*
 function myFunction1(){ 
   	   document.getElementById('storeinfo1').innerHTML = '黑膠漢堡台南車站店</br>' ;
 	   document.getElementById('storeinfo2').innerHTML = '地址：台南市中西區成功路</br>09xx-xxx-xxx' ;
@@ -183,6 +222,7 @@ function myFunction2(){
 	   marker2.setMap(null);
 		    
     }
+*/
 
 $('#chtext2').on('click', function () {
     $('#step1_btn').addClass('red')
