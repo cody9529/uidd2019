@@ -3,8 +3,6 @@ var infowindow1
 var infowindow2
 var marker1
 var marker2
-var directionsService = new google.maps.DirectionsService();
-var directionsDisplay = new google.maps.DirectionsRenderer();
 
 function myFunctionchoose() {
 	$('#choosebotton img').hide();
@@ -18,8 +16,8 @@ function myFunctionchoose() {
 
 function initMap() {
 	 // 載入路線服務與路線顯示圖層
-    	//var directionsService = new google.maps.DirectionsService();
-    	//var directionsDisplay = new google.maps.DirectionsRenderer();
+    	var directionsService = new google.maps.DirectionsService();
+    	var directionsDisplay = new google.maps.DirectionsRenderer();
         var contentString1 = "黑膠漢堡(台南車站店)&emsp;</br>";
 	var contentString2 = "黑膠漢堡(林森店)&emsp;</br>";
 	    
