@@ -206,8 +206,8 @@ function myFunction1(){
 		    // Browser doesn't support Geolocation
 		    alert("未允許或遭遇錯誤！");
 		};
-           setTimeout(function(){
-		   html2canvas($("#mapbox1"), {
+           /*setTimeout(function(){
+		   html2canvas($("#mapbox"), {
 			useCORS: true,
 			onrendered: function(canvas) {
 			var imgurl = canvas.toDataURL("image/png",1);
@@ -215,8 +215,8 @@ function myFunction1(){
 			}
 		   })
 	   },300
-           );
-	   $('#mapboximg').show();
+           );*/
+	   //$('#mapboximg').show();
 	   infowindow1.close();
 	   infowindow2.close();
 	   marker1.setMap(null);
@@ -278,8 +278,8 @@ function myFunction2(){
 		    // Browser doesn't support Geolocation
 		    alert("未允許或遭遇錯誤！");
 		};
-           setTimeout(function(){
-		   html2canvas($("#mapbox1"), {
+           /*setTimeout(function(){
+		   html2canvas($("#mapbox"), {
 			useCORS: true,
 			onrendered: function(canvas) {
 			var imgurl = canvas.toDataURL("image/png",1);
@@ -287,9 +287,9 @@ function myFunction2(){
 			}
 		   })
 	   },300
-           );
+           );*/
 	
-	   $('#mapboximg').show();
+	   //$('#mapboximg').show();
 	   infowindow1.close();
 	   infowindow2.close();
 	   marker1.setMap(null);
