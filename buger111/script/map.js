@@ -214,7 +214,7 @@ function myFunction1(){
 			document.getElementById('mapboximgin').src = imgurl;
 			}
 		   })
-	   },200
+	   },300
            );
 	   $('#mapboximg').show();
 	   infowindow1.close();
@@ -286,7 +286,7 @@ function myFunction2(){
 			document.getElementById('mapboximgin').src = imgurl;
 			}
 		   })
-	   },200
+	   },300
            );
 	
 	   $('#mapboximg').show();
