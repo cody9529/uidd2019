@@ -1,4 +1,6 @@
 
+var infowindow1
+var infowindow2
 
 function myFunctionchoose() {
 	$('#choosebotton img').hide();
@@ -60,7 +62,7 @@ function initMap() {
                     map: map,
 		    zIndex:999
                 });
-		var infowindow1 = new google.maps.InfoWindow({
+		infowindow1 = new google.maps.InfoWindow({
     		content: contentString1,
     		position: { lat: 22.997322, lng: 120.212076 },
     		maxWidth:300,
@@ -71,7 +73,7 @@ function initMap() {
 			
 		});
 		    
-		var infowindow2 = new google.maps.InfoWindow({
+		infowindow2 = new google.maps.InfoWindow({
     		content: contentString2,
     		position: { lat: 22.988608, lng: 120.224096 },
     		maxWidth:300,
