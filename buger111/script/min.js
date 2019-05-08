@@ -178,6 +178,7 @@ $('#step3_btn').on('click', function () {
 
 
 $('#self_defind').on('click', function () {
+    document.getElementById('getimetext').innerHTML = '選擇取餐時間' ;
     $('#default').addClass('opacity')
     $('#defa').addClass('opacity')
     $('#self_defind').removeClass('opacity')
@@ -272,6 +273,7 @@ $('#next1').on('click', function () {
     $('.step3').removeClass('animated fadeOutRight 0.5s')
     $('.step3').addClass('animated fadeInRight 0.5s')
     $('.step3').show()
+    document.getElementById('getimetext').innerHTML = '取餐時間' ;
 })
 
 
@@ -285,6 +287,7 @@ $('#next2').on('click', function () {
     $('.step3').removeClass('animated fadeOutRight 0.5s')
     $('.step3').addClass('animated fadeInRight 0.5s')
     $('.step3').show()
+    document.getElementById('getimetext').innerHTML = '取餐時間' ;
 
     $('#cost').addClass('animated fadeOutLeft 0.5s')
     $('#cost').delay(400).hide()
