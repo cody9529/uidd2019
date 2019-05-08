@@ -223,8 +223,8 @@ function myFunction1(){
 	   marker2.setMap(null);
        document.getElementById('storeinfo1').innerHTML = '黑膠漢堡台南車站店</br>' ;
 	   document.getElementById('storeinfo2').innerHTML = '地址：台南市中西區成功路</br>09xx-xxx-xxx' ;
-       $('.step2').removeClass('animated fadeOutRight 0.5s');
-       $('.step2').addClass('animated fadeInRight 0.5s');
+       $('.step2').removeClass('animated fadeOutRight 0.3s');
+       $('.step2').addClass('animated fadeInRight 0.3s');
        $('.step2').show();
     };
 function myFunction2(){	   
@@ -297,8 +297,11 @@ function myFunction2(){
 	   infowindow2.close();
 	   marker1.setMap(null);
 	   marker2.setMap(null);
-           document.getElementById('storeinfo1').innerHTML = '黑膠漢堡林森店' ;
+       document.getElementById('storeinfo1').innerHTML = '黑膠漢堡林森店' ;
 	   document.getElementById('storeinfo2').innerHTML = '地址：台南市東區崇善路151號</br>09xx-xxx-xxx' ;
+	   $('.step2').removeClass('animated fadeOutRight 0.3s');
+       $('.step2').addClass('animated fadeInRight 0.3s');
+       $('.step2').show();
     };
 
 
