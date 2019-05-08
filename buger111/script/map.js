@@ -221,8 +221,11 @@ function myFunction1(){
 	   infowindow2.close();
 	   marker1.setMap(null);
 	   marker2.setMap(null);
-           document.getElementById('storeinfo1').innerHTML = '黑膠漢堡台南車站店</br>' ;
+       document.getElementById('storeinfo1').innerHTML = '黑膠漢堡台南車站店</br>' ;
 	   document.getElementById('storeinfo2').innerHTML = '地址：台南市中西區成功路</br>09xx-xxx-xxx' ;
+       $('.step2').removeClass('animated fadeOutRight 0.5s');
+       $('.step2').addClass('animated fadeInRight 0.5s');
+       $('.step2').show();
     };
 function myFunction2(){	   
 	   $('#step2_btn').addClass('red');
