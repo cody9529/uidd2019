@@ -147,6 +147,7 @@ $('#step1_btn').on('click', function () {
     $('#step2_btn').removeClass('red')
     $('#step3_btn').removeClass('red')
     $('.step2').addClass('animated fadeOutRight 0.3s')
+    $('.step3').addClass('animated fadeOutRight 0.3s')
 })
 /*
 $('#chtext2').on('click', function () {
@@ -225,6 +226,7 @@ $('#self_defind').on('click', function () {
 
 $('#default').on('click', function () {
     $('.time_block').animate({ height: "50%" })
+    document.getElementById('default').innerHTML ="系統預定"
 
     $('#default').removeClass('opacity')
     $('#defa').removeClass('opacity')
@@ -278,6 +280,7 @@ $('#next2').on('click', function () {
     $('#step3_btn').addClass('red')
     $('#next1').fadeOut()
     $('#self_defind').fadeOut()
+    document.getElementById('default').innerHTML = "自行設定"
     $('.time_block').animate({ height: "27%" })
     $('.step3').removeClass('animated fadeOutRight 0.5s')
     $('.step3').addClass('animated fadeInRight 0.5s')
