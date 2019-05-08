@@ -449,6 +449,47 @@ $('#minute50').on('click',function(){
 
 //event
 
-
-
 //}
+
+//page 0
+//visiter function
+$("#visiter_img").hover(
+    function() {
+       $(this).attr("src","./img/工作區域 4.png");
+    },
+    function() {
+       $(this).attr("src","./img/工作區域 1.png");
+    }
+ );
+ $('#visiter_img').on('click',function(){
+
+ });
+
+
+
+ //memberlogin function
+ $("#memberlogin_img").hover(
+    function() {
+       $(this).attr("src","./img/工作區域 5.png");
+    },
+    function() {
+       $(this).attr("src","./img/工作區域 2.png");
+    }
+ );
+ $('#memberlogin_img').on('click',function(){
+
+ });
+
+
+ //registered function
+ $("#registered_img").hover(
+    function() {
+       $(this).attr("src","./img/工作區域 6.png");
+    },
+    function() {
+       $(this).attr("src","./img/工作區域 3.png");
+    }
+ );
+ $('#memberlogin_img').on('click',function(){
+
+ });

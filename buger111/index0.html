@@ -38,84 +38,24 @@
         </div>
 
         <div class="mid_region">
-            <div class="step1">
-                <button type="button" class="btn btn-secondary btn-lg button_step" id='step1_btn'>STEP1</button>
-                <br><br>
-                <button type="button" class="btn btn-secondary btn-lg button_step opacity">重新選擇取餐門市</button>
-		<br><br>
-		<div id="choosebotton"><img src="./img/工作區域 40.png" onclick="myFunctionchoose()" style="cursor:pointer"></div>
-		<div id="mapbox"></div>
+            
+            <div class="mid_icon" id="visiter">
+                <img id="visiter_img" src="./img/工作區域 1.png" style="width:16vw; cursor: pointer;">
             </div>
-            <div class="step2">
-                <button type="button" class="btn btn-secondary btn-lg button_step red" id='step2_btn'>STEP2</button>
-                <br><br>
-                <b style="font-size:30px;color: azure;">選擇取餐時間</b>
-                <button type="button" class="btn btn-secondary btn-lg button_step" id='default'>系統預定</button>
-                <button type="button" class="btn btn-secondary btn-lg button_step opacity"
-                    id='self_defind'>自行設定</button>
-                <div class="time_block" id='defa'>
-                    <p id="week">TUE</p>
-                    <span id="month">MAY</span><span>,</span>
-                    <span id="day">15</span>
-                    <br>
-                    <span id="hour">11</span><span>:</span>
-                    <span id="minute">50</span>
-                    <button type="button" class="btn btn-secondary btn-lg button_step next" id='next1'>NEXT</button>
-                </div>
-
-                <div class="time_table">
-                    <p style='position:absolute;font-weight: 1000;font-size: 15px'>日期</p>
-                    <p style='position:absolute;font-weight: 1000;font-size: 15px;top:47%'>時間</p>
-                    <p style='position:absolute;font-weight: 1000;font-size: 15px;top:57%;left:12%'>時</p>
-                    <p style='position:absolute;font-weight: 1000;font-size: 15px;top:75%;left:12%'>分</p>
-                    <div class="date_selecter block_selected" id='tod' style="left:20%">15</div>
-                    <div class="date_selecter" id='tom'>16</div>
-                    <div class="date_selecter"id='dat' style="left:60%">17</div>
-
-                    <div class="hour_selecter" style='left:28%'id='hour11'>11</div>
-                    <div class="hour_selecter block_selected" id='hour12'>12</div>
-                    <div class="hour_selecter "style="left:62%" id='hour13'>13</div>
-
-                    <div class="minute_selecter "style="left:20%" id='minute00'>00</div>
-                    <div class="minute_selecter "style="left:33%" id='minute10'>10</div>
-                    <div class="minute_selecter block_selected"style="left:46%" id='minute20'>20</div>
-                    <div class="minute_selecter "style="left:59%" id='minute30'>30</div>
-                    <div class="minute_selecter "style="left:72%" id='minute40'>40</div>
-                    <div class="minute_selecter "style="left:85%" id='minute50'>50</div>              
-                </div>
-                <div class="time_block" id='cost'>
-                    <p id="week_">TUE</p>
-                    <span id="month_">MAY</span><span>,</span>
-                    <span id="day_">21</span>
-                    <br>
-                    <span id="hour_">11</span><span>:</span>
-                    <span id="minute_">50</span>
-                    <button type="button" class="btn btn-secondary btn-lg button_step next" id='next2'>NEXT</button>
-                </div>
-
-             
+            
+            <div class="mid_icon" id="memberlogin">
+                <img id="memberlogin_img" src="./img/工作區域 2.png" style="width:16vw; cursor: pointer;">
             </div>
-            <div class="step3">
-                <button type="button" class="btn btn-secondary btn-lg button_step" id='step3_btn'>STEP3</button>
-                <br><br>
-                <b style="font-size:30px;color: azure;">選擇付費方式</b>
-                <div class="payBlock">
-                    <img class='opacity' src="./img/linepay.png" id='line'>
-                    <img class='opacity' src="./img/mywallet.png" id="wallet">
-                    <img class='opacity' src="./img/card.png" id="card">
-                    <img class='opacity' src="./img/yoyo.png" id="yoyo">
-                </div>
-                <button type="button" class="btn btn-primary btn-lg btn-block" id='confirm_red'>CONFIRM AND PAY</button>
-
-
+            
+            <div class="mid_icon" id="registered">
+                <img id="registered_img" src="./img/工作區域 2.png" style="width:16vw; cursor: pointer;">
             </div>
+            
         </div>
 
 
     </div>
-    <script src="./script/map.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3-fExgqiJV_3JHHWNlxHDzT_dS-dtl24&callback=initMap">
-    </script>
+    
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

@@ -142,6 +142,19 @@ body {
  // border: 3px solid red;
 }
 
+/*this is third page config*/
+.wrap .mid_region .mid_icon {
+  display: inline-block;
+  position: relative;
+  margin: 0px 6.5vw 0px 0px;
+  left: 8vw;
+  top: 7.5vw;
+  transform: translate(0%, 0%);
+  //border: 2px solid gray;
+}
+
+
+
 .shadow {
   position: inherit;
   width: 100%;
