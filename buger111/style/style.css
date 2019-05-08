@@ -423,6 +423,10 @@ body {
   padding: 0.5% 0 0 2vw;
 }
 
+#chtext2{
+  margin: 0 0 7px 0;
+}
+
 #choosebotton {
   position: relative;
   top: 0;
