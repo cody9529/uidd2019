@@ -301,6 +301,8 @@ function myFunction2(){
 	   marker2.setMap(null);
        document.getElementById('storeinfo1').innerHTML = '黑膠漢堡林森店' ;
 	   document.getElementById('storeinfo2').innerHTML = '地址：台南市東區崇善路151號</br>09xx-xxx-xxx' ;
+	   document.getElementById('mapbox').style.width='78%';
+	   document.getElementById('mapbox').style.height='45%';
 	   $('.step2').removeClass('animated fadeOutRight 0.3s');
        $('.step2').addClass('animated fadeInRight 0.3s');
        $('.step2').show();

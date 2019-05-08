@@ -491,6 +491,7 @@ body {
   left: 25%;
   height: 100%;
   width: 70%;
+  padding: 0.5% 0 0 2vw;
   display: none;
 }
 
@@ -515,17 +516,17 @@ body {
 }
 
 #default {
-  position: absolute;
+  position: relative;
   width: 18%;
-  top: 18%;
+  top: 0%;
   left: 0;
 }
 
 #self_defind {
-  position: absolute;
+  position: relative;
   width: 18%;
-  top: 18%;
-  left: 20%;
+  top: 0%;
+  left: 0;
 }
 
 .payBlock {
