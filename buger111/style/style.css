@@ -420,7 +420,7 @@ body {
   position: absolute;
   width: 25%;
   height: 100%;
-  padding: 2.5vw 0 0 2vw;
+  padding: 2.3vw 0 0 2vw;
 }
 
 #choosebotton {
@@ -503,7 +503,8 @@ body {
 
 .button_step {
   font-weight: bold;
-  font-size: 20px;
+  line-height: 0;
+  font-size: 26px;
   border-radius: 10px;
   height: 45px;
 }
