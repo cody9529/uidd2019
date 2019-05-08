@@ -607,6 +607,8 @@ body {
 
 #cost {
   display: none;
+  position: relative;
+  top: -100%;
   left: 20%;
 }
 
@@ -622,7 +624,7 @@ body {
   position: relative;
   width: 50%;
   height: 50%;
-  top: 0%;
+  top: -50%;
   left: 38%;
   background-color: #e6e6e6;
   padding: 20px;
