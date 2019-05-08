@@ -608,8 +608,9 @@ body {
 #cost {
   display: none;
   position: relative;
+  width: 16%;
   top: -100%;
-  left: 17.2%;
+  left: 17.5%;
 }
 
 .next {
@@ -625,7 +626,7 @@ body {
   width: 50%;
   height: 50%;
   top: -50%;
-  left: 34.5%;
+  left: 35%;
   background-color: #e6e6e6;
   padding: 20px;
   display: none;
