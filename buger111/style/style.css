@@ -585,7 +585,7 @@ body {
   width: 16%;
   height: 50%;
   top: 0%;
-  padding: 0px;
+  padding: 10px;
   background-color: black;
   overflow: hidden;
   font-size: 30px;
@@ -617,7 +617,7 @@ body {
   position: absolute;
   width: 70%;
   left: 15%;
-  bottom: 15%;
+  bottom: 8%;
 }
 
 .time_table {
