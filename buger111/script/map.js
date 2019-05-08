@@ -314,5 +314,7 @@ $('#chtext2').on('click', function () {
     document.getElementById('storeinfo2').innerHTML = '' ;
     initMap();
     $('#mapboximg').hide();
-    document.getElementById('mapboximgin').src = "";
+	document.getElementById('mapboximgin').src = "";
+	$('.step2').addClass('animated fadeOutRight 0.3s');
+	$('.step3').addClass('animated fadeOutRight 0.3s')
 })

@@ -146,6 +146,7 @@ $('#step1_btn').on('click', function () {
     $('#step1_btn').addClass('red')
     $('#step2_btn').removeClass('red')
     $('#step3_btn').removeClass('red')
+    $('.step2').addClass('animated fadeOutRight 0.3s')
 })
 /*
 $('#chtext2').on('click', function () {
