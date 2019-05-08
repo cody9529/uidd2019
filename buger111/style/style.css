@@ -517,16 +517,16 @@ body {
 
 #default {
   position: relative;
-  width: 18%;
+  width: 16%;
   top: 0%;
   left: 0;
 }
 
 #self_defind {
   position: relative;
-  width: 18%;
+  width: 16%;
   top: 0%;
-  left: 0;
+  left: 0.7vw;
 }
 
 .payBlock {
@@ -581,11 +581,11 @@ body {
 }
 
 .time_block {
-  position: absolute;
-  width: 18%;
+  position: relative;
+  width: 16%;
   height: 50%;
-  top: 28%;
-  padding: 5px;
+  top: 0%;
+  padding: 0px;
   background-color: black;
   overflow: hidden;
   font-size: 30px;
