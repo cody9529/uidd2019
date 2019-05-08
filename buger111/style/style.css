@@ -500,6 +500,7 @@ body {
   left: 50%;
   height: 100%;
   width: 33%;
+  padding: 0.5% 0 0 2vw;
   display: none;
 }
 
