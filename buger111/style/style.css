@@ -540,7 +540,7 @@ body {
 #line {
   position: relative;
   width: 48%;
-  left: 0;
+  left: 0%;
   top: 0%;
   cursor: pointer;
 }
@@ -548,7 +548,7 @@ body {
 #wallet {
   position: relative;
   width: 48%;
-  left: -49%;
+  left: 0%;
   top: 0%;
   cursor: pointer;
 }
@@ -556,7 +556,7 @@ body {
 #card {
   position: relative;
   width: 48%;
-  left: 55%;
+  left: 0%;
   top: 0%;
   cursor: pointer;
 }
@@ -564,7 +564,7 @@ body {
 #yoyo {
   position: relative;
   width: 48%;
-  left: 7%;
+  left: 0%;
   top: 0%;
   cursor: pointer;
 }
