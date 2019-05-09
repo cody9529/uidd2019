@@ -246,6 +246,8 @@ $('#default').on('click', function () {
     $('#self_defind').fadeIn()
     $('.step3').addClass('animated fadeOutRight 0.5s')
 
+    document.getElementById('storeinfo1').style.color="white";
+
     /*這裡是重抓時間的功能，之後可能用到上一頁面執行*/
     var day = new Date()
     console.log(day)
@@ -313,6 +315,7 @@ $('#line').on('click', function () {
     $('#step1_btn').removeClass('red')
     $('#step2_btn').removeClass('red')
     $('#confirm_red').fadeIn(200)
+    document.getElementById('storeinfo1').style.color="red";
 })
 
 $('#wallet').on('click', function () {
@@ -325,6 +328,7 @@ $('#wallet').on('click', function () {
     $('#step1_btn').removeClass('red')
     $('#step2_btn').removeClass('red')
     $('#confirm_red').fadeIn(200)
+    document.getElementById('storeinfo1').style.color="red";
 })
 
 $('#card').on('click', function () {
@@ -337,6 +341,7 @@ $('#card').on('click', function () {
     $('#step1_btn').removeClass('red')
     $('#step2_btn').removeClass('red')
     $('#confirm_red').fadeIn(200)
+    document.getElementById('storeinfo1').style.color="red";
 })
 
 $('#yoyo').on('click', function () {
@@ -349,6 +354,7 @@ $('#yoyo').on('click', function () {
     $('#step1_btn').removeClass('red')
     $('#step2_btn').removeClass('red')
     $('#confirm_red').fadeIn(200)
+    document.getElementById('storeinfo1').style.color="red";
 })
 
 /*select time*/
