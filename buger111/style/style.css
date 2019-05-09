@@ -541,7 +541,7 @@ body {
   position: relative;
   width: 48%;
   left: 0%;
-  top: 0%;
+  top: -2vw;
   cursor: pointer;
 }
 
@@ -549,14 +549,14 @@ body {
   position: relative;
   width: 48%;
   left: 0%;
-  top: 0%;
+  top: -2.7vw;
   cursor: pointer;
 }
 
 #card {
   position: relative;
   width: 48%;
-  left: 0%;
+  left: 5%;
   top: 0%;
   cursor: pointer;
 }
@@ -564,13 +564,13 @@ body {
 #yoyo {
   position: relative;
   width: 48%;
-  left: 0%;
+  left: 5%;
   top: 0%;
   cursor: pointer;
 }
 
 #confirm_red {
-  position: absolute;
+  position: relative;
   bottom: 23%;
   background-color: red;
   font-weight: bold;
