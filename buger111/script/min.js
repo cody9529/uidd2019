@@ -295,6 +295,7 @@ $('#next1').on('click', function () {
 $('#next2').on('click', function () {
     $('#step2_btn').removeClass('red')
     $('#step3_btn').addClass('red')
+    $('#defa').removeClass('opacity')
     $('#next1').fadeOut()
     $('#self_defind').fadeOut()
     document.getElementById('default').innerHTML = "自行設定"
