@@ -246,6 +246,8 @@ $('#default').on('click', function () {
     $('#self_defind').fadeIn()
     $('.step3').addClass('animated fadeOutRight 0.5s')
 
+    $('#confirm_red').hide()
+
     document.getElementById('storeinfo1').style.color='white';
     document.getElementById('week').style.color='white';
     document.getElementById('month').style.color='white';

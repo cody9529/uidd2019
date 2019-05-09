@@ -334,5 +334,6 @@ $('#chtext2').on('click', function () {
 	$('#line').addClass('opacity')
     $('#card').addClass('opacity')
     $('#wallet').addClass('opacity')
-    $('#yoyo').addClass('opacity')
+	$('#yoyo').addClass('opacity')
+	$('#confirm_red').hide()
 })
