@@ -253,6 +253,12 @@ $('#default').on('click', function () {
     document.getElementById('hour').style.color='white';
     document.getElementById('minute').style.color='white';
 
+    $('#line').addClass('opacity')
+    $('#card').addClass('opacity')
+    $('#wallet').addClass('opacity')
+    $('#yoyo').addClass('opacity')
+
+
     /*這裡是重抓時間的功能，之後可能用到上一頁面執行*/
     var day = new Date()
     console.log(day)
