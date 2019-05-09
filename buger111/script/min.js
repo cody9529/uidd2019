@@ -252,6 +252,8 @@ $('#default').on('click', function () {
     document.getElementById('day').style.color='white';
     document.getElementById('hour').style.color='white';
     document.getElementById('minute').style.color='white';
+    document.getElementById('dot1').style.color='white';
+    document.getElementById('dot2').style.color='white';
 
     $('#line').addClass('opacity')
     $('#card').addClass('opacity')
@@ -333,6 +335,8 @@ $('#line').on('click', function () {
     document.getElementById('day').style.color='red';
     document.getElementById('hour').style.color='red';
     document.getElementById('minute').style.color='red';
+    document.getElementById('dot1').style.color='red';
+    document.getElementById('dot2').style.color='red';
 })
 
 $('#wallet').on('click', function () {
@@ -352,6 +356,8 @@ $('#wallet').on('click', function () {
     document.getElementById('day').style.color='red';
     document.getElementById('hour').style.color='red';
     document.getElementById('minute').style.color='red';
+    document.getElementById('dot1').style.color='red';
+    document.getElementById('dot2').style.color='red';
 })
 
 $('#card').on('click', function () {
@@ -371,6 +377,8 @@ $('#card').on('click', function () {
     document.getElementById('day').style.color='red';
     document.getElementById('hour').style.color='red';
     document.getElementById('minute').style.color='red';
+    document.getElementById('dot1').style.color='red';
+    document.getElementById('dot2').style.color='red';
 })
 
 $('#yoyo').on('click', function () {
@@ -390,6 +398,8 @@ $('#yoyo').on('click', function () {
     document.getElementById('day').style.color='red';
     document.getElementById('hour').style.color='red';
     document.getElementById('minute').style.color='red';
+    document.getElementById('dot1').style.color='red';
+    document.getElementById('dot2').style.color='red';
 })
 
 /*select time*/

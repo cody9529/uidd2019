@@ -329,6 +329,8 @@ $('#chtext2').on('click', function () {
     document.getElementById('day').style.color='white';
     document.getElementById('hour').style.color='white';
 	document.getElementById('minute').style.color='white';
+	document.getElementById('dot1').style.color='white';
+    document.getElementById('dot2').style.color='white';
 	$('#line').addClass('opacity')
     $('#card').addClass('opacity')
     $('#wallet').addClass('opacity')
