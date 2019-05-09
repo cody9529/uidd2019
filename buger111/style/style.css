@@ -571,7 +571,7 @@ body {
 
 #confirm_red {
   position: relative;
-  bottom: 23%;
+  top: 0%;
   background-color: red;
   font-weight: bold;
   font-size: 20px;
