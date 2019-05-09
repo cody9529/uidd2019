@@ -246,7 +246,12 @@ $('#default').on('click', function () {
     $('#self_defind').fadeIn()
     $('.step3').addClass('animated fadeOutRight 0.5s')
 
-    $('#storeinfo1').removeClass('redtext')
+    document.getElementById('storeinfo1').style.color='white';
+    document.getElementById('week').style.color='white';
+    document.getElementById('month').style.color='white';
+    document.getElementById('day').style.color='white';
+    document.getElementById('hour').style.color='white';
+    document.getElementById('minute').style.color='white';
 
     /*這裡是重抓時間的功能，之後可能用到上一頁面執行*/
     var day = new Date()
@@ -315,8 +320,13 @@ $('#line').on('click', function () {
     $('#step1_btn').removeClass('red')
     $('#step2_btn').removeClass('red')
     $('#confirm_red').fadeIn(200)
-    $('#storeinfo1').addClass('redtext')
     
+    document.getElementById('storeinfo1').style.color='red';
+    document.getElementById('week').style.color='red';
+    document.getElementById('month').style.color='red';
+    document.getElementById('day').style.color='red';
+    document.getElementById('hour').style.color='red';
+    document.getElementById('minute').style.color='red';
 })
 
 $('#wallet').on('click', function () {
@@ -329,7 +339,13 @@ $('#wallet').on('click', function () {
     $('#step1_btn').removeClass('red')
     $('#step2_btn').removeClass('red')
     $('#confirm_red').fadeIn(200)
-    $('#storeinfo1').addClass('redtext')
+    
+    document.getElementById('storeinfo1').style.color='red';
+    document.getElementById('week').style.color='red';
+    document.getElementById('month').style.color='red';
+    document.getElementById('day').style.color='red';
+    document.getElementById('hour').style.color='red';
+    document.getElementById('minute').style.color='red';
 })
 
 $('#card').on('click', function () {
@@ -342,7 +358,13 @@ $('#card').on('click', function () {
     $('#step1_btn').removeClass('red')
     $('#step2_btn').removeClass('red')
     $('#confirm_red').fadeIn(200)
-    $('#storeinfo1').addClass('redtext')
+    
+    document.getElementById('storeinfo1').style.color='red';
+    document.getElementById('week').style.color='red';
+    document.getElementById('month').style.color='red';
+    document.getElementById('day').style.color='red';
+    document.getElementById('hour').style.color='red';
+    document.getElementById('minute').style.color='red';
 })
 
 $('#yoyo').on('click', function () {
@@ -355,7 +377,13 @@ $('#yoyo').on('click', function () {
     $('#step1_btn').removeClass('red')
     $('#step2_btn').removeClass('red')
     $('#confirm_red').fadeIn(200)
-    $('#storeinfo1').addClass('redtext')
+    
+    document.getElementById('storeinfo1').style.color='red';
+    document.getElementById('week').style.color='red';
+    document.getElementById('month').style.color='red';
+    document.getElementById('day').style.color='red';
+    document.getElementById('hour').style.color='red';
+    document.getElementById('minute').style.color='red';
 })
 
 /*select time*/

@@ -323,5 +323,10 @@ $('#chtext2').on('click', function () {
 	$('.step3').addClass('animated fadeOutRight 0.3s')
 	document.getElementById('mapbox').style.width='200%';
 	document.getElementById('mapbox').style.height='60%';
-	$('#storeinfo1').removeClass('redtext')
+	document.getElementById('storeinfo1').style.color='white';
+	document.getElementById('week').style.color='white';
+    document.getElementById('month').style.color='white';
+    document.getElementById('day').style.color='white';
+    document.getElementById('hour').style.color='white';
+    document.getElementById('minute').style.color='white';
 })
