@@ -323,5 +323,5 @@ $('#chtext2').on('click', function () {
 	$('.step3').addClass('animated fadeOutRight 0.3s')
 	document.getElementById('mapbox').style.width='200%';
 	document.getElementById('mapbox').style.height='60%';
-	document.getElementById('storeinfo1').style.color="white";
+	$('#storeinfo1').removeClass('redtext')
 })
