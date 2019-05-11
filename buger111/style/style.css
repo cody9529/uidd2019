@@ -211,10 +211,10 @@ body {
   background-image: url("../img/工作區域 1 (2).png");
   background-size: contain;
   background-repeat: no-repeat;
-  top: 4vw;
+  top: 2.5vw;
   left: 8vw;
-  width: 75%;
-  height: 78%;
+  width: 78%;
+  height: 80%;
 }
 
 #signin_text {
@@ -228,7 +228,7 @@ body {
   position: absolute;
   font-size: 0.8vw;
   top: 5vw;
-  right: 5vw;
+  left: 45vw;
   width: 15vw;
   height: 2vw;
   font-family: Microsoft JhengHei;
@@ -281,7 +281,7 @@ body {
 #signinbotton {
   position: absolute;
   font-size: 1.5vw;
-  bottom: 8vw;
+  bottom: 5vw;
   left: 4vw;
   width: 22vw;
   height: 2.8vw;
@@ -289,11 +289,119 @@ body {
 
 #fbbotton {
   position: absolute;
-  font-size: 1.5vw;
-  bottom: 4.5vw;
+  font-size: 0.8vw;
+  bottom: 2vw;
   left: 4vw;
   width: 22vw;
   height: 2.2vw;
+  background-color: #0066FF;
+}
+
+#signup {
+  display: none;
+  position: relative;
+  background-image: url("../img/工作區域 1 (2).png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 4vw;
+  left: 8vw;
+  width: 78%;
+  height: 80%;
+}
+
+
+
+
+#signup_text {
+  font-size:5vw;
+  color: white;
+  width: 22vw;
+  padding: 13px 0 0 4vw;
+}
+
+#signup2 {
+  position: absolute;
+  font-size: 0.8vw;
+  top: 5vw;
+  left: 45vw;
+  width: 15vw;
+  height: 2vw;
+  font-family: Microsoft JhengHei;
+  background-color: black;
+  color:gray;
+}
+
+#name_text_up {
+  font-size:1.1vw;
+  font-weight: bold;
+  color: white;
+  padding: 0 0 0 4vw;
+}
+
+#name_input_up {
+  position: relative;
+  top: -0.6vw;
+  left: 4vw;
+  width: 22vw;
+  height: 2.5vw;
+  background-color: black;
+  color: white;
+  border-radius: 7px;
+}
+
+#mail_text_up {
+  font-size:1.1vw;
+  font-weight: bold;
+  color: white;
+  padding: 10px 0 0 4vw;
+}
+
+#mail_input_up {
+  position: relative;
+  top: -0.6vw;
+  left: 4vw;
+  width: 22vw;
+  height: 2.5vw;
+  background-color: black;
+  color: white;
+  border-radius: 7px;
+}
+
+#passward_text_up {
+  font-size:1.1vw;
+  font-weight: bold;
+  color: white;
+  padding: 10px 0 0 4vw;
+}
+
+#passward_input_up {
+  position: relative;
+  top: -0.6vw;
+  left: 4vw;
+  width: 22vw;
+  height: 2.5vw;
+  background-color: black;
+  color: white;
+  border-radius: 7px;
+}
+
+#signupbotton {
+  position: absolute;
+  font-size: 1.5vw;
+  bottom: 5vw;
+  left: 4vw;
+  width: 22vw;
+  height: 2.8vw;
+}
+
+#fbbotton_up {
+  position: absolute;
+  font-size: 0.8vw;
+  bottom: 2vw;
+  left: 4vw;
+  width: 22vw;
+  height: 2.2vw;
+  background-color: #0066FF;
 }
 
 #signup {
@@ -307,6 +415,7 @@ body {
   width: 75%;
   height: 78%;
 }
+
 
 
 
