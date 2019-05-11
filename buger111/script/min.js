@@ -538,7 +538,8 @@ $("#visiter_img").hover(
     }
  );
  $('#memberlogin_img').on('click',function(){
-
+    $('.mid_icon').hide()
+    $('#signin').fadeIn(300)
  });
 
 
@@ -551,6 +552,7 @@ $("#visiter_img").hover(
        $(this).attr("src","./img/工作區域 3.png");
     }
  );
- $('#memberlogin_img').on('click',function(){
-
+ $('#registered_img').on('click',function(){
+    $('.mid_icon').hide()
+    $('#signup').fadeIn(300)
  });

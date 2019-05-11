@@ -66,6 +66,14 @@ body {
   //border: 2px solid;
 }
 
+.wrap #top_regin {
+  width: 88%;
+  height: 8%;
+  text-align: center;
+  float: right;
+  clear: both;
+}
+
 .wrap .sidebar_region {
   position: absolute;
   width: 12%;
@@ -135,11 +143,55 @@ body {
 
 .wrap .mid_region {
   width: 88%;
-  height: 87%;
+  height: 92%;
   position: absolute;
   right: 0%;
   bottom: 0%;
  // border: 3px solid red;
+}
+
+/*member page*/
+.left {
+  width: 18%;
+  height: 100%;
+  float: left;
+  border: 3px solid red;
+}
+
+.right {
+  width: 82%;
+  height: 100%;
+  float: right;
+  border: 3px solid red;
+}
+
+.per_icon {
+  margin: 6px 0 0 0;
+}
+
+#head {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+  height: 0;
+  border: 3px solid white;
+  margin: 0 0 25px 0;
+}
+
+#personal {
+  position: relative;
+  width: 100%;
+  height: 15.8vw;
+  border: 3px solid white;
+  margin: 0 0 25px 0;
+}
+
+#personalbox {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 28vw;
+  border: 3px solid white;
 }
 
 /*this is third page config*/
@@ -151,6 +203,30 @@ body {
   top: 7.5vw;
   transform: translate(0%, 0%);
   //border: 2px solid gray;
+}
+
+#signin {
+  display: none;
+  position: relative;
+  background-image: url("../img/工作區域 1 (2).png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 4vw;
+  left: 8vw;
+  width: 75%;
+  height: 78%;
+}
+
+#signup {
+  display: none;
+  position: relative;
+  background-image: url("../img/工作區域 1 (2).png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 4vw;
+  left: 8vw;
+  width: 75%;
+  height: 78%;
 }
 
 
