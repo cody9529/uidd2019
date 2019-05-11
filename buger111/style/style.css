@@ -217,6 +217,85 @@ body {
   height: 78%;
 }
 
+#signin_text {
+  font-size:5vw;
+  color: white;
+  width: 22vw;
+  padding: 13px 0 0 4vw;
+}
+
+#signup1 {
+  position: absolute;
+  font-size: 0.8vw;
+  top: 5vw;
+  right: 5vw;
+  width: 15vw;
+  height: 2vw;
+  font-family: Microsoft JhengHei;
+  background-color: black;
+  color:gray;
+}
+
+#mail_text {
+  font-size:1.1vw;
+  font-weight: bold;
+  color: white;
+  padding: 0 0 0 4vw;
+}
+
+#mail_input {
+  position: relative;
+  top: -0.6vw;
+  left: 4vw;
+  width: 22vw;
+  height: 2.5vw;
+  background-color: black;
+  color: white;
+  border-radius: 7px;
+}
+
+#passward_text {
+  font-size:1.1vw;
+  font-weight: bold;
+  color: white;
+  padding: 10px 0 0 4vw;
+}
+
+#passward_input {
+  position: relative;
+  top: -0.6vw;
+  left: 4vw;
+  width: 22vw;
+  height: 2.5vw;
+  background-color: black;
+  color: white;
+  border-radius: 7px;
+}
+
+#forgetpassward_text {
+  font-size:0.5vw;
+  color: white;
+  padding: 0 0 0 4vw;
+}
+
+#signinbotton {
+  position: absolute;
+  font-size: 1.5vw;
+  bottom: 8vw;
+  left: 4vw;
+  width: 22vw;
+  height: 2.8vw;
+}
+
+#fbbotton {
+  position: absolute;
+  font-size: 1.5vw;
+  bottom: 4.5vw;
+  left: 4vw;
+  width: 22vw;
+  height: 2.2vw;
+}
+
 #signup {
   display: none;
   position: relative;
