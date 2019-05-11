@@ -207,14 +207,14 @@ body {
 
 #signin {
   display: none;
-  position: relative;
+  position: absolute;
   background-image: url("../img/工作區域 1 (2).png");
-  background-size: contain;
   background-repeat: no-repeat;
-  top: 2.5vw;
-  left: 8vw;
-  width: 78%;
-  height: 80%;
+  background-size: contain;
+  top: 10%;
+  left: 10%;
+  width: 60vw;
+  height: 35vw;
 }
 
 #signin_text {
@@ -228,7 +228,7 @@ body {
   position: absolute;
   font-size: 0.8vw;
   top: 5vw;
-  left: 45vw;
+  left: 35vw;
   width: 15vw;
   height: 2vw;
   font-family: Microsoft JhengHei;
@@ -258,7 +258,7 @@ body {
   font-size:1.1vw;
   font-weight: bold;
   color: white;
-  padding: 10px 0 0 4vw;
+  padding: 5px 0 0 4vw;
 }
 
 #passward_input {
@@ -297,19 +297,19 @@ body {
   background-color: #0066FF;
 }
 
+
+
 #signup {
   display: none;
-  position: relative;
+  position: absolute;
   background-image: url("../img/工作區域 1 (2).png");
-  background-size: contain;
   background-repeat: no-repeat;
-  top: 4vw;
-  left: 8vw;
-  width: 78%;
-  height: 80%;
+  background-size: contain;
+  top: 10%;
+  left: 10%;
+  width: 60vw;
+  height: 35vw;
 }
-
-
 
 
 #signup_text {
@@ -323,7 +323,7 @@ body {
   position: absolute;
   font-size: 0.8vw;
   top: 5vw;
-  left: 45vw;
+  left: 35vw;
   width: 15vw;
   height: 2vw;
   font-family: Microsoft JhengHei;
@@ -353,7 +353,7 @@ body {
   font-size:1.1vw;
   font-weight: bold;
   color: white;
-  padding: 10px 0 0 4vw;
+  padding: 5px 0 0 4vw;
 }
 
 #mail_input_up {
@@ -371,7 +371,7 @@ body {
   font-size:1.1vw;
   font-weight: bold;
   color: white;
-  padding: 10px 0 0 4vw;
+  padding: 5px 0 0 4vw;
 }
 
 #passward_input_up {
@@ -402,18 +402,6 @@ body {
   width: 22vw;
   height: 2.2vw;
   background-color: #0066FF;
-}
-
-#signup {
-  display: none;
-  position: relative;
-  background-image: url("../img/工作區域 1 (2).png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  top: 4vw;
-  left: 8vw;
-  width: 75%;
-  height: 78%;
 }
 
 
